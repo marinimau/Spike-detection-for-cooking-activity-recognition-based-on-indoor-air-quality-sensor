@@ -1,8 +1,8 @@
-'''
-    Author: Mauro Marini
-    Project: tesi
-    File: data_analysis/interval_detector.py
-'''
+#
+#   Author: Mauro Marini
+#   Project: tesi
+#   File: data_analysis/interval_detector.py
+#
 
 class Interval:
     def __init__(self):

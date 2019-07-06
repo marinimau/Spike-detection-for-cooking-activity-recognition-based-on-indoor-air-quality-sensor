@@ -1,8 +1,8 @@
-'''
-    Author: Mauro Marini
-    Project: tesi
-    File: data_manager/data_extractor.py
-'''
+#
+#   Author: Mauro Marini
+#   Project: tesi
+#   File: data_manager/data_extractor.py
+#
 
 import numpy as np
 
