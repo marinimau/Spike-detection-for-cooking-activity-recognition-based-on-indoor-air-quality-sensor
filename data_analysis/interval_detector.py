@@ -38,18 +38,13 @@ class Interval:
 
         #cerca per co2
         co2_intervals=self.calculate_interval_for_param(co2_peaks, tvoc_peaks, pm25_peaks)
-        print("Intervalli per co2: {}".format(co2_intervals.interval_list))
-
         #cerca per tvoc
         tvoc_intervals = self.calculate_interval_for_param(tvoc_peaks, co2_peaks, pm25_peaks)
-        print("Intervalli per co2: {}".format(tvoc_intervals.interval_list))
-
         #cerca per pm25
         pm25_intervals = self.calculate_interval_for_param(pm25_peaks, co2_peaks, tvoc_peaks)
-        print("Intervalli per pm25: {}".format(pm25_intervals.interval_list))
 
         #fai una media degli intervalli trovati
-        results_raw = self.calculate_results(((co2_intervals.interval_list) + (tvoc_intervals.interval_list) + (pm25_intervals.interval_list)), n_intervals)
+        results_raw = self.calculate_results(((co2_intervals.interval_list) + (tvoc_intervals.interval_list) + (pm25_intervals.interval_list)), 20, 40)
 
         results = self.convert_intervals(results_raw, datetime)
 
@@ -77,26 +72,25 @@ class Interval:
 
 
     # calcola degli intervalli che sono una media tra quelli vicini e restituisce n intervalli.
-    def calculate_results(self,all_intervals,results_len):
+    def calculate_results(self,all_intervals, max_disp, max_disp_large):
 
         results=Interval()
-        max_disp=30
-        max_disp_large=40
 
         # riordinare gli intervalli in input
         all_intervals.sort(key=operator.itemgetter(1))
-        print("All intervals: {}".format(all_intervals))
 
         for fst, mdl, lst in all_intervals:
-            if abs(fst - mdl) < max_disp: # abs(fst - lst) < max_disp or abs( mdl - lst) <= max_disp:
-                results.interval_list.append((fst,fst,mdl))
+            if abs(fst - mdl) < max_disp:
+                results.interval_list.append((fst-20,fst,mdl))
             if abs(fst - lst) < max_disp:
-                results.interval_list.append((fst,fst,lst))
+                results.interval_list.append((fst-20,fst,lst))
             if abs(mdl - lst) < max_disp:
-                results.interval_list.append((mdl, mdl, lst))
+                results.interval_list.append((mdl-20, mdl, lst))
             if abs(fst-mdl) < max_disp_large and abs(mdl-lst) < max_disp_large:
-                results.interval_list.append((fst, mdl, lst))
+                results.interval_list.append((fst-10, mdl, lst+10))
 
+        if len(results.interval_list) >= 8:
+            return self.calculate_results(all_intervals,max_disp-1, max_disp_large-1)
 
         return results.interval_list
 
@@ -112,8 +106,5 @@ class Interval:
                 if fst <= i <= lst:
                     binary_results[i] = 1
                     break
-
-
-        print(binary_results)
 
         return binary_results

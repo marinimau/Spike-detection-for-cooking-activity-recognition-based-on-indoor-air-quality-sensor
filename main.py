@@ -11,30 +11,35 @@ from scipy.signal import find_peaks
 from data_manager import data_extractor as ex_data, data_adapter as ad_data
 from data_analysis.interval_detector import Interval
 from data_analysis import peaks_detector as pd
+from data_testing.intervals_test import Intervals_test
 
 style.use('ggplot')
 
 # ---------------------------------------------------------------------------
 #   usare queste costanti per settare i parametri
 # ---------------------------------------------------------------------------
-SENSOR=2 # [1-8]
-DAY=2
-use_avg=True
-draw_chart=True
+SENSOR = 1  # [1-8]
+DAY = 11
+use_avg = True
+draw_chart = True
+
+print(
+    "----------------------------------------------------------------------\nSENSOR: {}\tDAY: {}\n----------------------------------------------------------------------".format(
+        SENSOR, DAY))
 
 # ---------------------------------------------------------------------------
 #   recupero i dati richiesti
 # ---------------------------------------------------------------------------
 
 d = ex_data.DataSet
-sensor_data=d.extract_data_from_sensor(ex_data.DataSet(),SENSOR)
-day_data=sensor_data.get_data_by_day(DAY)
+sensor_data = d.extract_data_from_sensor(ex_data.DataSet(), SENSOR)
+day_data = sensor_data.get_data_by_day(DAY)
 
 # ---------------------------------------------------------------------------
 #   cerco e salvo gli intervalli in cui si è cuinato durante una giornata
 # ---------------------------------------------------------------------------
 
-pasto_intervals=Interval.detect_interval(Interval(),day_data.datetime,day_data.is_pasto)
+pasto_intervals = Interval.detect_interval(Interval(), day_data.datetime, day_data.is_pasto)
 print("Intervalli pasto: {}".format(pasto_intervals.interval_list))
 
 # ---------------------------------------------------------------------------
@@ -56,25 +61,22 @@ else:
     tvoc = day_data.avg_tvoc_last5min
     pm25 = day_data.avg_pm25_last5min
 
-
 # ---------------------------------------------------------------------------
 #  Trovare picchi co2, tvoc, pm25
 # ---------------------------------------------------------------------------
 
-co2_peaks = pd.get_peaks(co2, 0, 5)
-tvoc_peaks = pd.get_peaks(tvoc, 0, 5)
-pm25_peaks = pd.get_peaks(pm25, 0, 5)
+co2_peaks = pd.get_peaks(co2, 0, 8)
+tvoc_peaks = pd.get_peaks(tvoc, 0, 8)
+pm25_peaks = pd.get_peaks(pm25, 0, 8)
 
 # ---------------------------------------------------------------------------
 #  Raggruppare i picchi dei 3 parametri in intervalli
 # ---------------------------------------------------------------------------
 
-calculated_intervals=Interval.calculate_intervals(Interval(), day_data.datetime, co2_peaks, tvoc_peaks, pm25_peaks, 4)
+calculated_intervals = Interval.calculate_intervals(Interval(), day_data.datetime, co2_peaks, tvoc_peaks, pm25_peaks, 4)
 
 # get_peaks prende dati, priminenza iniziale, e numero di picchi da trovare,
 # agisce sul valore della prominenza per trovarne il numero richiesto.
-
-
 
 
 # ---------------------------------------------------------------------------
@@ -82,20 +84,20 @@ calculated_intervals=Interval.calculate_intervals(Interval(), day_data.datetime,
 # ---------------------------------------------------------------------------
 
 if len(day_data.datetime) == len(day_data.is_pasto) and draw_chart:
-    plt.title('Sensor: {} | Day: {}'.format(SENSOR,DAY))
+    plt.title('Sensor: {} | Day: {}'.format(SENSOR, DAY))
     plt.xlabel(' X (time in minutes)')
     plt.ylabel('Y')
 
-    #intervals
+    # intervals
     plt.plot(day_data.datetime, (ad_data.mul(day_data.is_pasto, 1900)))
     plt.plot(day_data.datetime, (ad_data.mul(calculated_intervals, 1900)))
 
-    #CURVE
+    # CURVE
     plt.plot(day_data.datetime, co2)
     plt.plot(day_data.datetime, tvoc)
-    plt.plot(day_data.datetime, ad_data.mul(pm25, 20)) #moltiplico solo per rendere visibili le variazioni nel grafico
+    plt.plot(day_data.datetime, ad_data.mul(pm25, 20))  # moltiplico solo per rendere visibili le variazioni nel grafico
 
-    #PICCHI
+    # PICCHI
     plt.plot(co2_peaks, (np.rint(co2))[co2_peaks], "o")
     plt.plot(tvoc_peaks, (np.rint(tvoc))[tvoc_peaks], "o")
     plt.plot(pm25_peaks, (np.rint(ad_data.mul(pm25, 20)))[pm25_peaks], "o")
@@ -105,9 +107,12 @@ if len(day_data.datetime) == len(day_data.is_pasto) and draw_chart:
 # ---------------------------------------------------------------------------
 #  Testare il tutto
 # ---------------------------------------------------------------------------
-#
-#   TESTA PICCHI - TESTA INTERVALLI
-# test.run_test(PICCHI_RISULTATO,intervalli_pasto)
-#   -test PRECISION -> p is in intervallo_pasto?
-#   -test RECAL ogni intervallo_pasto ha p?
+
+# test PRECISION -> p is in intervallo_pasto?
+(fi, ri, si) = Intervals_test.precision_test(Intervals_test(), calculated_intervals, day_data.is_pasto)
+print("Precision test (founded_intr:  {}, real_intr: {}, satisfied_founded_intr: {})".format(fi, ri, si))
+
+#  test RECAL ogni intervallo_pasto ha p?
+(ri, fi, si) = Intervals_test.recall_test(Intervals_test(), calculated_intervals, day_data.is_pasto)
+print("Recall test (real_intr:  {}, founded_intr: {}, satisfied_real_intr: {})".format(ri, fi, si))
 #   -test DISTANZA MINIMA

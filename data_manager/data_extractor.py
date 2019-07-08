@@ -326,7 +326,7 @@ class DataSet:
                 rel_for_day+=1
                 day_data.add_tuple(self, current_row)
             current_row+=1
-        print("Tuple presenti: {}".format(rel_for_day))
+        print("Tuple presenti nel campione: {}".format(rel_for_day))
         return day_data
 
 
