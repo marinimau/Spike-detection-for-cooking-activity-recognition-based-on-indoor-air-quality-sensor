@@ -34,7 +34,7 @@ class Interval:
 
 
     # calcola n intervalli dati i picchi trovati
-    def calculate_intervals(self, datetime, co2_peaks, tvoc_peaks, pm25_peaks, n_intervals):
+    def calculate_intervals(self, datetime, co2_peaks, tvoc_peaks, pm25_peaks, max_num_intervals):
 
         #cerca per co2
         co2_intervals=self.calculate_interval_for_param(co2_peaks, tvoc_peaks, pm25_peaks)
@@ -44,7 +44,7 @@ class Interval:
         pm25_intervals = self.calculate_interval_for_param(pm25_peaks, co2_peaks, tvoc_peaks)
 
         #fai una media degli intervalli trovati
-        results_raw = self.calculate_results(((co2_intervals.interval_list) + (tvoc_intervals.interval_list) + (pm25_intervals.interval_list)), 20, 40)
+        results_raw = self.calculate_results(((co2_intervals.interval_list) + (tvoc_intervals.interval_list) + (pm25_intervals.interval_list)), 20, 40, max_num_intervals)
 
         results = self.convert_intervals(results_raw, datetime)
 
@@ -72,7 +72,7 @@ class Interval:
 
 
     # calcola degli intervalli che sono una media tra quelli vicini e restituisce n intervalli.
-    def calculate_results(self,all_intervals, max_disp, max_disp_large):
+    def calculate_results(self,all_intervals, max_disp, max_disp_large, max_num_intervals):
 
         results=Interval()
 
@@ -89,8 +89,8 @@ class Interval:
             if abs(fst-mdl) < max_disp_large and abs(mdl-lst) < max_disp_large:
                 results.interval_list.append((fst-10, mdl, lst+10))
 
-        if len(results.interval_list) >= 8:
-            return self.calculate_results(all_intervals,max_disp-1, max_disp_large-1)
+        if len(results.interval_list) > max_num_intervals:
+            return self.calculate_results(all_intervals,max_disp-1, max_disp_large-1, max_num_intervals)
 
         return results.interval_list
 
