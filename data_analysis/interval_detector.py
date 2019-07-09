@@ -44,7 +44,7 @@ class Interval:
         pm25_intervals = self.calculate_interval_for_param(pm25_peaks, co2_peaks, tvoc_peaks)
 
         #fai una media degli intervalli trovati
-        results_raw = self.calculate_results(((co2_intervals.interval_list) + (tvoc_intervals.interval_list) + (pm25_intervals.interval_list)), 20, 40, max_num_intervals)
+        results_raw = self.calculate_results(((co2_intervals.interval_list) + (tvoc_intervals.interval_list) + (pm25_intervals.interval_list)), 30, 50, max_num_intervals)
 
         results = self.convert_intervals(results_raw, datetime)
 
