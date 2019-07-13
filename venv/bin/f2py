@@ -1,4 +1,4 @@
-#!/Users/mauromarini/PycharmProjects/tesi/venv/bin/python
+#!/home/marinimau/Documenti/GitHub/tesi/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

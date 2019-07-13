@@ -34,7 +34,7 @@ class Interval:
 
 
     # calcola n intervalli dati i picchi trovati
-    def calculate_intervals(self, datetime, co2_peaks, tvoc_peaks, pm25_peaks, max_num_intervals):
+    def calculate_intervals(self, datetime, co2_peaks, tvoc_peaks, pm25_peaks, temp_peaks, humidity_peaks, max_num_intervals):
 
         #cerca per co2
         co2_intervals=self.calculate_interval_for_param(co2_peaks, tvoc_peaks, pm25_peaks)
