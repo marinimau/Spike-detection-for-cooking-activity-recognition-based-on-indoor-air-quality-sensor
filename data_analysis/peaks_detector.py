@@ -9,7 +9,7 @@ from scipy.signal import find_peaks
 def get_peaks(data, distance, width, prominence,num_peaks):
     peaks, _ = find_peaks(data, distance=distance, width=width, prominence=prominence)
     if len(peaks) > num_peaks:
-        return get_peaks(data, distance, width, prominence+0.5, num_peaks)
+        return get_peaks(data, distance, width, prominence+1, num_peaks)
     else:
         return peaks
 

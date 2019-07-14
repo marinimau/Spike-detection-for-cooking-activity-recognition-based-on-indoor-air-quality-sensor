@@ -12,17 +12,19 @@ from data_analysis.interval_detector import Interval
 from data_analysis.intervals_finder import PredictedInterval
 from data_analysis import peaks_detector as pd
 from data_testing.intervals_test import Intervals_test
+from data_manager.data_prefab import DataPrefab
 
 style.use('ggplot')
 
 class Run_all:
 
-    def run(self, SENSOR, DAY, use_avg, draw_chart, n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, max_num_intervals, max_small_tollerance, max_large_tollerance, n_peaks_large_tollerance):
+    def run(self, dataset, SENSOR, DAY, use_avg, draw_chart, n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, max_num_intervals, max_small_tollerance, max_large_tollerance, n_peaks_large_tollerance):
 
         print_curve = False
         print_picchi = False
         print_picchi_allineati = True
-        use_incomplete_sample = True
+        use_incomplete_sample = False
+        use_prefab_split_sample = True # usando dati pre-splittati velocizzo notevolmente i test
 
         print(
             "----------------------------------------------------------------------\nSENSOR: {}\tDAY: {}\n----------------------------------------------------------------------".format(
@@ -31,14 +33,16 @@ class Run_all:
         # ---------------------------------------------------------------------------
         #   recupero i dati richiesti
         # ---------------------------------------------------------------------------
-
-        d = ex_data.DataSet
-        sensor_data = d.extract_data_from_sensor(ex_data.DataSet(), SENSOR)
-        day_data = sensor_data.get_data_by_day(DAY)
+        if use_prefab_split_sample:
+            day_data = DataPrefab.get_data_by_sensor_and_day(dataset, SENSOR, DAY)
+        else:
+            d = ex_data.DataSet
+            sensor_data = d.extract_data_from_sensor(ex_data.DataSet(), SENSOR)
+            day_data = sensor_data.get_data_by_day(DAY)
 
         n_rilevazioni = len(day_data.datetime)
 
-        if(n_rilevazioni >= 1440 or use_incomplete_sample):
+        if(n_rilevazioni >= 1000 or use_incomplete_sample):
 
             # ---------------------------------------------------------------------------
             #   cerco e salvo gli intervalli in cui si è cuinato durante una giornata
@@ -148,7 +152,7 @@ class Run_all:
             (fi, ri, si) = Intervals_test.count_intervals_test(Intervals_test(), calculated_intervals_bin, day_data.is_pasto)
             min_dist = Intervals_test.count_avg_min_dist(Intervals_test(), calculated_intervals, pasto_intervals.interval_list)
             return fi, ri, si, min_dist
-        return 0, 0, 0
+        return 0, 0, 0, 0
 
 
     def add_to_list(self,parent_list, to_append):
