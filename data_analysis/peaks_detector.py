@@ -13,6 +13,7 @@ def get_peaks(data, distance, width, prominence,num_peaks):
     else:
         return peaks
 
+# il pm 2.5 necessita di una funzione particolare
 def get_pm25_peaks(data, height ,num_peaks):
     peaks, _ = find_peaks(data, height=height)
     if len(peaks) > num_peaks:

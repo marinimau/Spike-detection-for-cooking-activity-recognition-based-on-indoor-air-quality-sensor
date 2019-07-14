@@ -14,10 +14,11 @@ class PredictedInterval:
 
     def predict_intervals(self, peaks_list, datetime, max_num_intervals, small_tollerance, hight_tollerance , n_peaks_large_tollerance):
         for i in range(len(peaks_list) - 1):
-            if self.filterInterval(peaks_list, i, hight_tollerance) >= n_peaks_large_tollerance and self.get_neighbour_distance(peaks_list[i], self.interval_list, 20):
+            if abs(peaks_list[i] - peaks_list[i + 1]) < small_tollerance:
                 self.interval_list += [(peaks_list[i] - 30, peaks_list[i + 1] + 10)]
             else:
-                if abs(peaks_list[i] - peaks_list[i + 1]) < small_tollerance:
+                if self.filterInterval(peaks_list, i,
+                                       hight_tollerance) >= n_peaks_large_tollerance and self.get_neighbour_distance(peaks_list[i], self.interval_list, 20):
                     self.interval_list += [(peaks_list[i] - 30, peaks_list[i + 1] + 10)]
 
             # mergia eventuali intervalli ravvicinati per evitare che che ne vengano contati separatamente
@@ -26,7 +27,8 @@ class PredictedInterval:
             return self.predict_intervals(peaks_list, datetime, max_num_intervals, small_tollerance - 0.5, hight_tollerance - 0.5, n_peaks_large_tollerance)
         else:
             print("Intervalli trovati: {}".format(self.interval_list))
-            return self.convert_to_binary(self.interval_list, datetime)
+            return self.interval_list, self.convert_to_binary(self.interval_list, datetime)
+
 
     def filterInterval(self, peaks_list, position, tollerance):
         counter = 0
@@ -34,6 +36,7 @@ class PredictedInterval:
             if abs(peaks_list[position] - item) <= tollerance:
                 counter += 1
         return counter
+
 
     def count_predicted_intervals(self, interval_list):
         counter = 0
@@ -51,6 +54,7 @@ class PredictedInterval:
         if open_interval:
             counter += 1
         return counter
+
 
     def convert_to_binary(self, intervals, datetime):
         binary_list = []
@@ -73,6 +77,7 @@ class PredictedInterval:
             if not (abs(start - value) < distance and abs(end - value) < distance):
                 return False
         return True
+
 
     def merge_intervals(self, intervals):
         merged_intervals_raw = []

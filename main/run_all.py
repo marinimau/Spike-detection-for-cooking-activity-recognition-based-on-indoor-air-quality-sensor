@@ -91,7 +91,7 @@ class Run_all:
             start_small_tollerance = max_small_tollerance
             start_high_tollerance = max_large_tollerance
 
-            calculated_intervals= PredictedInterval.predict_intervals(PredictedInterval(), peaks_list, day_data.datetime, max_num_intervals, start_small_tollerance, start_high_tollerance, n_peaks_large_tollerance)
+            calculated_intervals, calculated_intervals_bin = PredictedInterval.predict_intervals(PredictedInterval(), peaks_list, day_data.datetime, max_num_intervals, start_small_tollerance, start_high_tollerance, n_peaks_large_tollerance)
 
             # get_peaks prende dati, priminenza iniziale, e numero di picchi da trovare,
             # agisce sul valore della prominenza per trovarne il numero richiesto.
@@ -107,7 +107,7 @@ class Run_all:
 
                 # intervals
                 plt.plot(day_data.datetime, (ad_data.mul(day_data.is_pasto, 1900)))
-                plt.plot(day_data.datetime, (ad_data.mul(calculated_intervals, 1900)))
+                plt.plot(day_data.datetime, (ad_data.mul(calculated_intervals_bin, 1900)))
 
                 # CURVE
                 if print_curve:
@@ -125,7 +125,7 @@ class Run_all:
                     plt.plot(temp_peaks, (np.rint(ad_data.mul(temp, 20)))[temp_peaks], "o")
                     plt.plot(humidity_peaks, (np.rint(ad_data.mul(humidity, 10)))[humidity_peaks], "o")
 
-                # PICCHI ALLINEATI IN ALTEZZA PER VALUTARE MEGLIO L'ALLINEAMENTO SULL'ASSE X
+                # PICCHI ALLINEATI IN ALTEZZA PER VEDERE MEGLIO L'ALLINEAMENTO TRA DI ESSI
 
                 allinea = []
                 for d in  day_data.datetime:
@@ -145,10 +145,9 @@ class Run_all:
             # ---------------------------------------------------------------------------
 
             #test PRECISION -> p è in intervallo_pasto?
-            (fi, ri, si) = Intervals_test.count_intervals_test(Intervals_test(), calculated_intervals, day_data.is_pasto)
-            #   -test DISTANZA MINIMA'''
-            #min_dist = Intervals_test.evaluate_avg_distance(Intervals_test(), calculated_intervals, day_data.is_pasto)
-            return fi, ri, si#, min_dist
+            (fi, ri, si) = Intervals_test.count_intervals_test(Intervals_test(), calculated_intervals_bin, day_data.is_pasto)
+            min_dist = Intervals_test.count_avg_min_dist(Intervals_test(), calculated_intervals, pasto_intervals.interval_list)
+            return fi, ri, si, min_dist
         return 0, 0, 0
 
 
