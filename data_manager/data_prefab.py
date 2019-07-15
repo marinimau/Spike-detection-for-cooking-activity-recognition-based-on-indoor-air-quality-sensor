@@ -13,7 +13,7 @@ class DataPrefab:
 
     def generate_data_from_entire_sample(self):
         for sensor in range(1, 9):
-            for day in range(1, 32):
+            for day in range(16, 22):
                 sensor_data = DataSet.extract_data_from_sensor(DataSet(), sensor)
                 day_data = sensor_data.get_data_by_day(day)
                 index = sensor*100+day
