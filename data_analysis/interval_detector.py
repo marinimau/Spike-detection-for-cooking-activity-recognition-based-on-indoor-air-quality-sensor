@@ -26,9 +26,9 @@ class Interval:
                     startInterval=datetime[minutes]
                 endInterval=datetime[minutes]
 
-            if not pasto[minutes]==1.0 and pasto[minutes-1] == 1.0: #se siamo appena usciti da un intervallo salvo nella lista
-                self.interval_list += [(startInterval,endInterval)]
+            if not pasto[minutes]==1.0 and pasto[minutes-1] == 1.0: # se siamo appena usciti da un intervallo salvo nella lista
+                self.interval_list += [(startInterval, endInterval)]
                 open_interval=False
-            minutes +=1
+            minutes += 1
         return self
 

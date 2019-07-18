@@ -62,11 +62,7 @@ class Run_all:
             # ---------------------------------------------------------------------------
 
             if use_avg:
-                co2 = ad_data.avg(day_data.avg_co2_last5min, day_data.avg_co2_next5min)
-                tvoc = ad_data.avg(day_data.avg_tvoc_last5min, day_data.avg_tvoc_next5min)
-                pm25 = ad_data.avg(day_data.avg_pm25_last5min, day_data.avg_pm25_next5min)
-                temp = ad_data.avg(day_data.avg_temperature_last5min, day_data.avg_temperature_next5min)
-                humidity = ad_data.avg(day_data.avg_humidity_last5min, day_data.avg_humidity_next5min)
+                co2, tvoc, pm25, temp, humidity = ad_data.make_avg_of_param(day_data)
             else:
                 co2 = day_data.avg_co2_last5min
                 tvoc = day_data.avg_tvoc_last5min

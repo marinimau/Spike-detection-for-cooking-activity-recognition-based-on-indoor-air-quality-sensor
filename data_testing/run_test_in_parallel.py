@@ -1,11 +1,10 @@
 #
 #   Author: Mauro Marini
 #   Project: tesi
-#   run_test_in_parallel.py
+#   data_testing/run_test_in_parallel.py
 #
 
-from execute_for_all_sample import Main
-from data_manager.data_prefab import DataPrefab
+from data_testing.execute_for_all_sample import Main
 from multiprocessing import Pool
 
 class Run:
@@ -41,7 +40,7 @@ class Run:
         self.test_fun(4, (15, 16), (7, 8), (1, 2), (1, 2), (2, 3), (9, 10), (10, 11), (3, 4))
         return
 
-    # eseguo in parallelo le funzioni
+    # eseguo in parallelo i test
     def run_in_parallel(self):
         pool = Pool()
         pool.apply_async(self.f1)
