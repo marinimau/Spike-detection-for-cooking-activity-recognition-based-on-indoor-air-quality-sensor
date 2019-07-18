@@ -4,7 +4,7 @@
 #   File: execute_for_all_sample.py
 #
 
-from main.run_all import Run_all
+from main_loop.run_all import Run_all
 from statistiche.evaluate_results import Evaluate
 from data_manager.data_prefab import DataPrefab
 import csv
@@ -17,7 +17,7 @@ class Main:
     SENSOR = 1
     DAY = 2
 
-    SENSOR_INTERVAL = (1, 9)
+    SENSOR_INTERVAL = (1, 2)
     DAY_INTERVAL = (1,32)
 
     # quanti intervalli trovare al massimo? diventa più severo sull'allineamento dei picchi

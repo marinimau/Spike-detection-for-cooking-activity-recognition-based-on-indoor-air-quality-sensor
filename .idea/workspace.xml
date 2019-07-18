@@ -1,14 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e4174ed-4a73-4028-aa62-b9652013285b" name="Default Changelist" comment="">
+    <list default="true" id="2e4174ed-4a73-4028-aa62-b9652013285b" name="Default Changelist" comment="tutti i test funzionanti">
+      <change afterPath="$PROJECT_DIR$/data_testing/run_test_in_parallel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_manager/data_prefab.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_manager/data_prefab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/execute_for_all_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/execute_for_all_sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_vector/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/run_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_loop/run_all.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/feature_vector/generate_feature_vector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/main_loop/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat19.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat21.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat22.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat23.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat25.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat26.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat27.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat28.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat29.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat30.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat31.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat32.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat33.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat34.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat35.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat36.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,44 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main/run_all.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#74#110#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/risultati_test/stat4.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="10172" column="20" selection-start-line="10172" selection-end-line="10172" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_manager/data_prefab.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -63,31 +68,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/risultati_test/stat3.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="1252" column="19" selection-start-line="1252" selection-end-line="1252" selection-end-column="19" />
+            <state relative-caret-position="784">
+              <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_testing/run_test_in_parallel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="352" column="19" selection-start-line="352" selection-end-line="352" selection-end-column="19" />
+            <state relative-caret-position="150">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="e#59#78#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+        <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -95,11 +121,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/execute_for_all_sample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="105">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="e#84#116#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main_loop/run_all.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="e#74#110#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/statistiche/evaluate_results.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -115,15 +162,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sort</find>
-      <find>0.565972</find>
-      <find>0.6</find>
-      <find>founded</find>
-      <find>0.62</find>
-      <find>1.</find>
-      <find>0.5</find>
+      <find>: 0.53</find>
+      <find>Precision test: 0.34</find>
+      <find>Precision test: 0.35</find>
+      <find>: 0.566</find>
+      <find>9,5,1,2,2,9,10,3</find>
+      <find>: 0.55</find>
+      <find>Precision test: 0.4270</find>
+      <find>: 0.56</find>
       <find>Precision test: 0.3</find>
-      <find>Precision test: 0.38</find>
+      <find>recall test: 0.39</find>
+      <find>: 0.59</find>
+      <find>precision test: 0.5</find>
+      <find>precision test: 0.40</find>
+      <find>precision test: 0.47</find>
+      <find>: 0.58</find>
+      <find>Precision test: 0.39</find>
+      <find>Precision test: 0.7</find>
+      <find>Precision test: 0.4</find>
+      <find>precision test: 0.51</find>
+      <find>: 0.57</find>
+      <find>: 0.6148</find>
+      <find>: 0.4</find>
+      <find>: 0.614</find>
+      <find>: 0.</find>
+      <find>: 0.5</find>
+      <find>: 0.62</find>
+      <find>: 0.6</find>
+      <find>: 0.61</find>
+      <find>Precision test: 0.5</find>
+      <find>Precision test: 0.</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,15 +210,17 @@
         <option value="$PROJECT_DIR$/data_manager/prefab_data.py" />
         <option value="$PROJECT_DIR$/data_analysis/peaks_detector.py" />
         <option value="$PROJECT_DIR$/statistiche.txt" />
-        <option value="$PROJECT_DIR$/main/run_all.py" />
+        <option value="$PROJECT_DIR$/data_manager/data_prefab.py" />
         <option value="$PROJECT_DIR$/execute_for_all_sample.py" />
+        <option value="$PROJECT_DIR$/main/run_all.py" />
+        <option value="$PROJECT_DIR$/risultati_test/stat3.txt" />
+        <option value="$PROJECT_DIR$/risultati_test/stat2.txt" />
+        <option value="$PROJECT_DIR$/risultati_test/stat4.txt" />
+        <option value="$PROJECT_DIR$/risultati_test/stat1.txt" />
         <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/risultati_test/stat1.txt" />
-        <option value="$PROJECT_DIR$/risultati_test/stat2.txt" />
-        <option value="$PROJECT_DIR$/risultati_test/stat3.txt" />
-        <option value="$PROJECT_DIR$/risultati_test/stat4.txt" />
-        <option value="$PROJECT_DIR$/data_manager/data_prefab.py" />
+        <option value="$PROJECT_DIR$/feature_vector/generate_feature_vector.py" />
+        <option value="$PROJECT_DIR$/data_testing/run_test_in_parallel.py" />
       </list>
     </option>
   </component>
@@ -165,7 +235,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,35 +242,11 @@
               <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
               <item name="tesi" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="data_manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="data_testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="risultati_test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="statistiche" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,6 +256,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data_testing" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -323,7 +373,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_testing/run_test_in_parallel.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -392,7 +442,12 @@
       <workItem from="1563092361375" duration="19699000" />
       <workItem from="1563115832810" duration="1442000" />
       <workItem from="1563117573569" duration="7977000" />
-      <workItem from="1563179682200" duration="3599000" />
+      <workItem from="1563179682200" duration="4125000" />
+      <workItem from="1563216204712" duration="13396000" />
+      <workItem from="1563289265876" duration="3067000" />
+      <workItem from="1563358328695" duration="1587000" />
+      <workItem from="1563359948770" duration="599000" />
+      <workItem from="1563467277281" duration="2319000" />
     </task>
     <task id="LOCAL-00001" summary="alcuni cambiament, va continuato">
       <created>1563061867421</created>
@@ -415,11 +470,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563124743891</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tutti i test funzionanti">
+      <created>1563193875170</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1563193875170</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105800000" />
+    <option name="totallyTimeSpent" value="127294000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,7 +496,7 @@
     <frame x="62" y="27" width="1858" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.15011038" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.15673289" />
       <window_info id="Structure" order="1" sideWeight="0.5034674" side_tool="true" weight="0.13741721" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -447,9 +509,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12527594" side_tool="true" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12582782" side_tool="true" weight="0.32824427" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49944812" weight="0.3293348" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.8747241" visible="true" weight="0.32824427" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.8741722" weight="0.32824427" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -460,7 +522,7 @@
       <window_info anchor="right" x="0" y="0" width="414" height="853" id="Documentation" order="7" sideWeight="0.500813" side_tool="true" weight="0.3289183" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.15011038" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.15673289" />
       <window_info id="Structure" order="1" sideWeight="0.5034674" side_tool="true" weight="0.13741721" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -469,13 +531,13 @@
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49889624" weight="0.3991276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49944812" weight="0.3293348" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12472406" side_tool="true" visible="true" weight="0.32861805" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12582782" side_tool="true" weight="0.32824427" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49944812" weight="0.3293348" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.8752759" visible="true" weight="0.32861805" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.8741722" visible="true" weight="0.32824427" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -510,13 +572,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/statistiche.csv" />
-    <entry file="file://$PROJECT_DIR$/statistiche/evaluate_results.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/risultati_test/stat16.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -574,71 +629,85 @@
     <entry file="file://$PROJECT_DIR$/risultati_test/stat5.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/run_all.py">
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat4.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="784">
+          <caret line="58" column="32" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/statistiche/evaluate_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_loop/run_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="e#74#110#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_manager/data_prefab.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/execute_for_all_sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="105">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
             <element signature="e#84#116#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
+    <entry file="file://$PROJECT_DIR$/data_testing/run_test_in_parallel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="150" column="18" selection-start-line="150" selection-start-column="18" selection-end-line="150" selection-end-column="18" />
+        <state relative-caret-position="175">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#59#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat3.txt">
+    <entry file="file://$PROJECT_DIR$/data_manager/data_prefab.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="1252" column="19" selection-start-line="1252" selection-end-line="1252" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="352" column="19" selection-start-line="352" selection-end-line="352" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="10172" column="20" selection-start-line="10172" selection-end-line="10172" selection-end-column="20" />
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
