@@ -29,7 +29,7 @@ class FeatureVectorGenerator:
         with open('feature_vector_results/feature_vector.csv', mode='w') as feature_vector_file:
             results_writer = csv.writer(feature_vector_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             results_writer.writerow(
-                ['datetime', 'pasto', 'n_co2_peaks_last5', 'n_co2_peaks_next5', 'n_co2_peaks_last10',
+                ['datetime', 'n_co2_peaks_last5', 'n_co2_peaks_next5', 'n_co2_peaks_last10',
                  'n_co2_peaks_next10', 'n_co2_peaks_last15', 'n_co2_peaks_next15', 'n_co2_peaks_last20',
                  'n_co2_peaks_next20', 'n_co2_peaks_last25', 'n_co2_peaks_next25', 'n_co2_peaks_last30',
                  'n_co2_peaks_next30', 'n_tvoc_peaks_last5', 'n_tvoc_peaks_next5', 'n_tvoc_peaks_last10',
@@ -44,7 +44,7 @@ class FeatureVectorGenerator:
                  'n_temp_peaks_next30', 'n_hum_peaks_last5', 'n_hum_peaks_next5', 'n_hum_peaks_last10',
                  'n_hum_peaks_next10', 'n_hum_peaks_last15', 'n_hum_peaks_next15', 'n_hum_peaks_last20',
                  'n_hum_peaks_next20', 'n_hum_peaks_last25', 'n_hum_peaks_next25', 'n_hum_peaks_last30',
-                 'n_hum_peaks_next30'])
+                 'n_hum_peaks_next30'], 'pasto')
         return
 
     def get_data(self, DAY):
@@ -135,7 +135,7 @@ class FeatureVectorGenerator:
                 results_writer = csv.writer(feature_vector_file, delimiter=',', quotechar='"',
                                             quoting=csv.QUOTE_MINIMAL)
                 results_writer.writerow(
-                    [day_data.datetime[i], day_data.is_pasto[i], co2_count_last5, co2_count_next5,
+                    [day_data.datetime[i], co2_count_last5, co2_count_next5,
                      co2_count_last10, co2_count_next10,
                      co2_count_last15, co2_count_next15, co2_count_last20, co2_count_next20, co2_count_last25,
                      co2_count_next25, co2_count_last30, co2_count_next30, tvoc_count_last5, tvoc_count_next5,
@@ -148,7 +148,7 @@ class FeatureVectorGenerator:
                      temp_count_last25, temp_count_next25, temp_count_last30, temp_count_next30, hum_count_last5,
                      hum_count_next5, hum_count_last10, hum_count_next10, hum_count_last15, hum_count_next15,
                      hum_count_last20, hum_count_next20, hum_count_last25, hum_count_next25, hum_count_last30,
-                     hum_count_next30])
+                     hum_count_next30], day_data.is_pasto[i])
         return
 
 
