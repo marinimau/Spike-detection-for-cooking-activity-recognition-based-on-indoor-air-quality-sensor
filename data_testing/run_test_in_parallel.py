@@ -7,6 +7,7 @@
 from data_testing.execute_for_all_sample import Main
 from multiprocessing import Pool
 
+
 class Run:
     def __init__(self, dataset):
         self.dataset = dataset
@@ -24,6 +25,10 @@ class Run:
                                         Main.run(Main(), doc, self.dataset, p_co2, p_tvoc, p_pm25, p_temp, p_hum, small_intr_tol, large_intr_tol, n_peaks_large_intr)
         return
 
+    # ---------------------------------------------------------------------------
+    #  Divido gli intervalli del for meno annidato per alleviare la
+    #  complessità computazionale pessima
+    # ---------------------------------------------------------------------------
     def f1(self):
         self.test_fun(1, (4, 5), (3, 4), (2, 3), (1, 2), (1, 2), (7, 8), (14, 15), (3, 4))
         return

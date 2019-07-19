@@ -6,22 +6,23 @@
 
 from main_loop.run_all import Run_all
 from statistiche.evaluate_results import Evaluate
+from params import Params
 
 import csv
 
 
 class Main:
-    use_avg = True
-    draw_chart = False
-    auto = True
-    SENSOR = 1
-    DAY = 2
+    use_avg = Params.use_avg
+    draw_chart = Params.draw_chart
+    auto = Params.auto
+    SENSOR = Params.SENSOR
+    DAY = Params.DAY
 
-    SENSOR_INTERVAL = (1, 2)
-    DAY_INTERVAL = (1,32)
+    SENSOR_INTERVAL = Params.SENSOR_intr
+    DAY_INTERVAL = Params.DAY_intr
 
     # quanti intervalli trovare al massimo? diventa più severo sull'allineamento dei picchi
-    max_num_intervals = 7  # default 10
+    max_num_intervals = Params.max_num_intervals  # default 10
 
     def run(self, file_statistiche, dataset, np_co2, np_tvoc, np_pm25, np_temp, np_humidity, max_disp_small, max_disp_large, n_peaks_for_large_tollerance):
 
@@ -42,7 +43,7 @@ class Main:
                 SENSOR = i
                 for j in range(self.DAY_INTERVAL[0], self.DAY_INTERVAL[1]):
                     DAY = j
-                    fi, ri, si, min_dist = Run_all.run(Run_all(), dataset, SENSOR, DAY, self.use_avg, self.draw_chart, n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, self.max_num_intervals, max_disp_small, max_disp_large, n_peaks_for_large_tollerance)  # (flag: use_avg, draw_chart)
+                    fi, ri, si, min_dist = Run_all.run(Run_all(), dataset, SENSOR, DAY, n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, self.max_num_intervals, max_disp_small, max_disp_large, n_peaks_for_large_tollerance)  # (flag: use_avg, draw_chart)
                     with open('results.csv', mode='a+') as results_file:
                         results_writer = csv.writer(results_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
                         results_writer.writerow([fi, ri, si])
@@ -60,6 +61,6 @@ class Main:
                 stat_writer.writerow(["Avg min dist: {}".format(min_dist_tot / count_test)])
                 stat_writer.writerow(["---------------------------------------------------"])
         else:
-            Run_all.run(Run_all(), dataset, self.SENSOR, self.DAY , self.use_avg, self.draw_chart, n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, self.max_num_intervals, max_disp_small, max_disp_large, n_peaks_for_large_tollerance)  # (flag: use_avg, draw_chart)
+            Run_all.run(Run_all(), dataset, self.SENSOR, self.DAY, n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, self.max_num_intervals, max_disp_small, max_disp_large, n_peaks_for_large_tollerance)  # (flag: use_avg, draw_chart)
 
         return

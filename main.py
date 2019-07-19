@@ -6,14 +6,19 @@
 from data_testing.run_test_in_parallel import Run
 from feature_vector.generate_feature_vector import FeatureVectorGenerator
 from data_manager.data_prefab import DataPrefab
+from params import Params
 
-run_test = False
-generate_feature_vector = True
+class Main:
 
-dataset = DataPrefab.generate_data_from_entire_sample(DataPrefab())
+    dataset = DataPrefab.generate_data_from_entire_sample(DataPrefab())
 
 
-if run_test:
-    Run.run_in_parallel(Run(dataset))
-if generate_feature_vector:
-    FeatureVectorGenerator.generate(FeatureVectorGenerator(dataset))
+
+    def execute(self):
+        if Params.run_test:
+            Run.run_in_parallel(Run(self.dataset))
+        if Params.generate_feature_vector:
+            FeatureVectorGenerator.generate(FeatureVectorGenerator(self.dataset))
+
+
+Main.execute(Main())

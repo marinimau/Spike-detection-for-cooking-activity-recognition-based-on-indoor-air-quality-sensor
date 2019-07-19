@@ -6,6 +6,7 @@
 from data_manager.data_prefab import DataPrefab
 from data_analysis import peaks_detector as pd
 from data_manager import data_adapter as ad_data
+from params import Params
 import csv
 
 use_incomplete_sample = True
@@ -59,7 +60,15 @@ class FeatureVectorGenerator:
         return
 
     def find_peaks(self, data):
-        avg_co2, avg_tvoc, avg_pm25, avg_temp, avg_hum = ad_data.make_avg_of_param(data)
+
+        if Params.use_raw_data:
+            avg_co2 = data.co2
+            avg_tvoc = data.tvoc
+            avg_pm25 = data.pm25
+            avg_temp = data.temperature
+            avg_hum = data.humidity
+        else:
+            avg_co2, avg_tvoc, avg_pm25, avg_temp, avg_hum = ad_data.make_avg_of_param(data)
 
         co2_peaks = pd.get_peaks(avg_co2, 60, 0.6, 1, n_peaks_co2_to_find)
         tvoc_peaks = pd.get_peaks(avg_tvoc, 60, 0.9, 1, n_peaks_tvoc_to_find)
@@ -86,10 +95,17 @@ class FeatureVectorGenerator:
         for i in range(len(day_data.datetime)-1):
             counter += 1
             if day_data.datetime[i] == minute:
-                print("counter: {}".format(counter))
                 break
-        return day_data.is_pasto[counter]
-
+        if Params.use_raw_data:
+            if day_data.activity[counter] == 0:
+                return 'N'
+            else:
+                return 'Y'
+        else:
+            if day_data.is_pasto[counter] == 0:
+                return 'N'
+            else:
+                return 'Y'
 
     def print_feature(self, co2_p, tvoc_p, pm25_p, temp_p, hum_p, day_data):
         for i in range(len(day_data.datetime)):
@@ -148,7 +164,7 @@ class FeatureVectorGenerator:
                      temp_count_last25, temp_count_next25, temp_count_last30, temp_count_next30, hum_count_last5,
                      hum_count_next5, hum_count_last10, hum_count_next10, hum_count_last15, hum_count_next15,
                      hum_count_last20, hum_count_next20, hum_count_last25, hum_count_next25, hum_count_last30,
-                     hum_count_next30, day_data.is_pasto[i]])
+                     hum_count_next30, pasto])
         return
 
 

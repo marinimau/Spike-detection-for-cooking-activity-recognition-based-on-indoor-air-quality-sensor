@@ -11,7 +11,7 @@ class Interval:
         self.interval_list=[]
         return
 
-    # data una lista di datetime e una di pasti rileva e restituisce gli intervalli
+    # data una lista di datetime e una di pasti rileva e restituisce gli intervalli reali
     def detect_interval(self,datetime,pasto):
 
         open_interval=False

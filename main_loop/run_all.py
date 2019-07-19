@@ -7,24 +7,26 @@
 from matplotlib import pyplot as plt
 from matplotlib import style
 import numpy as np
-from data_manager import data_extractor as ex_data, data_adapter as ad_data
+from data_manager import elaborated_data_extractor as ex_data, data_adapter as ad_data
 from data_analysis.interval_detector import Interval
 from data_analysis.intervals_finder import PredictedInterval
 from data_analysis import peaks_detector as pd
 from data_testing.intervals_test import Intervals_test
 from data_manager.data_prefab import DataPrefab
+from params import Params
 
 style.use('ggplot')
 
 class Run_all:
 
-    def run(self, dataset, SENSOR, DAY, use_avg, draw_chart, n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, max_num_intervals, max_small_tollerance, max_large_tollerance, n_peaks_large_tollerance):
+    def run(self, dataset, SENSOR, DAY, n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, max_num_intervals, max_small_tollerance, max_large_tollerance, n_peaks_large_tollerance):
 
-        print_curve = False
-        print_picchi = False
-        print_picchi_allineati = True
-        use_incomplete_sample = False
-        use_prefab_split_sample = True # usando dati pre-splittati velocizzo notevolmente i test
+        print_curve = Params.print_curve
+        print_picchi = Params.print_picchi
+        print_picchi_allineati = Params.print_picchi_allineati
+        use_incomplete_sample = Params.use_incomplete_sample
+        use_avg = Params.use_avg
+        draw_chart = Params.draw_chart
 
         print(
             "----------------------------------------------------------------------\nSENSOR: {}\tDAY: {}\n----------------------------------------------------------------------".format(
@@ -33,12 +35,7 @@ class Run_all:
         # ---------------------------------------------------------------------------
         #   recupero i dati richiesti
         # ---------------------------------------------------------------------------
-        if use_prefab_split_sample:
-            day_data = DataPrefab.get_data_by_sensor_and_day(dataset, SENSOR, DAY)
-        else:
-            d = ex_data.DataSet
-            sensor_data = d.extract_data_from_sensor(ex_data.DataSet(), SENSOR)
-            day_data = sensor_data.get_data_by_day(DAY)
+        day_data = DataPrefab.get_data_by_sensor_and_day(dataset, SENSOR, DAY)
 
         n_rilevazioni = len(day_data.datetime)
 
@@ -47,8 +44,10 @@ class Run_all:
             # ---------------------------------------------------------------------------
             #   cerco e salvo gli intervalli in cui si è cuinato durante una giornata
             # ---------------------------------------------------------------------------
-
-            pasto_intervals = Interval.detect_interval(Interval(), day_data.datetime, day_data.is_pasto)
+            if Params.use_raw_data:
+                pasto_intervals = Interval.detect_interval(Interval(), day_data.datetime, day_data.activity)
+            else:
+                pasto_intervals = Interval.detect_interval(Interval(), day_data.datetime, day_data.is_pasto)
             print("Intervalli pasto: {}".format(pasto_intervals.interval_list))
 
             # ---------------------------------------------------------------------------
@@ -58,17 +57,26 @@ class Run_all:
             # ---------------------------------------------------------------------------
 
             # ---------------------------------------------------------------------------
-            #  settare le variabili
+            #  Se non uso i dati grezzi, uso una media
             # ---------------------------------------------------------------------------
-
-            if use_avg:
-                co2, tvoc, pm25, temp, humidity = ad_data.make_avg_of_param(day_data)
+            if not Params.use_raw_data:
+                if use_avg:
+                    co2, tvoc, pm25, temp, humidity = ad_data.make_avg_of_param(day_data)
+                else:
+                    co2 = day_data.avg_co2_last5min
+                    tvoc = day_data.avg_tvoc_last5min
+                    pm25 = day_data.avg_pm25_last5min
+                    temp = day_data.avg_temperature_last5min
+                    humidity = day_data.avg_humidity_last5min
+            # ---------------------------------------------------------------------------
+            #  Se uso i dati grezzi
+            # ---------------------------------------------------------------------------
             else:
-                co2 = day_data.avg_co2_last5min
-                tvoc = day_data.avg_tvoc_last5min
-                pm25 = day_data.avg_pm25_last5min
-                temp = day_data.avg_temperature_last5min
-                humidity = day_data.avg_humidity_last5min
+                co2 = day_data.co2
+                tvoc = day_data.tvoc
+                pm25 = day_data.pm25
+                temp = day_data.temperature
+                humidity = day_data.humidity
 
             # ---------------------------------------------------------------------------
             #  Trovare picchi co2, tvoc, pm25
@@ -100,13 +108,17 @@ class Run_all:
             #  Disegnare grafico
             # ---------------------------------------------------------------------------
 
-            if len(day_data.datetime) == len(day_data.is_pasto) and draw_chart:
+            if ((not Params.use_raw_data and len(day_data.datetime) == len(day_data.is_pasto)) or (Params.use_raw_data and len(day_data.datetime) == len(day_data.activity))) and draw_chart:
                 plt.title('Sensor: {} | Day: {}'.format(SENSOR, DAY))
                 plt.xlabel(' X (time in minutes)')
                 plt.ylabel('Y')
 
                 # intervals
-                plt.plot(day_data.datetime, (ad_data.mul(day_data.is_pasto, 1900)))
+                if Params.use_raw_data:
+                    plt.plot(day_data.datetime, (ad_data.mul(day_data.activity, 1900)))
+                else:
+                    plt.plot(day_data.datetime, (ad_data.mul(day_data.is_pasto, 1900)))
+
                 plt.plot(day_data.datetime, (ad_data.mul(calculated_intervals_bin, 1900)))
 
                 # CURVE
@@ -145,7 +157,10 @@ class Run_all:
             # ---------------------------------------------------------------------------
 
             #test PRECISION -> p è in intervallo_pasto?
-            (fi, ri, si) = Intervals_test.count_intervals_test(Intervals_test(), calculated_intervals_bin, day_data.is_pasto)
+            if Params.use_raw_data:
+                (fi, ri, si) = Intervals_test.count_intervals_test(Intervals_test(), calculated_intervals_bin, day_data.activity)
+            else:
+                (fi, ri, si) = Intervals_test.count_intervals_test(Intervals_test(), calculated_intervals_bin, day_data.is_pasto)
             min_dist = Intervals_test.count_avg_min_dist(Intervals_test(), calculated_intervals, pasto_intervals.interval_list)
             return fi, ri, si, min_dist
         return 0, 0, 0, 0
