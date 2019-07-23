@@ -11,11 +11,11 @@ import csv
 
 use_incomplete_sample = True
 
-n_peaks_co2_to_find = 15
-n_peaks_tvoc_to_find = 7
-n_peaks_pm25_to_find = 1
-n_peaks_temp_to_find = 1
-n_peaks_humidity_to_find = 2
+n_peaks_co2_to_find = Params.n_peaks_co2_feature_vector
+n_peaks_tvoc_to_find = Params.n_peaks_tvoc_feature_vector
+n_peaks_pm25_to_find = Params.n_peaks_pm25_feature_vector
+n_peaks_temp_to_find = Params.n_peaks_temp_feature_vector
+n_peaks_humidity_to_find = Params.n_peaks_humidity_feature_vector
 
 day_intr = (1, 32)
 
@@ -170,7 +170,7 @@ class FeatureVectorGenerator:
 
     def generate(self):
         self.init_csv_file()
-        for day in range(day_intr[0], day_intr[1]):
+        for day in range(Params.DAY_intr[0], Params.DAY_intr[1]):
             day_data = self.get_data(day)
             if not day_data is None:
                 # recupero i picchi
