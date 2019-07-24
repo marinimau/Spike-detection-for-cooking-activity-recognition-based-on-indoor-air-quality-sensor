@@ -41,3 +41,21 @@ class Confusion_matrix:
             results_writer.writerow(["\n\n"])
         results_file.close()
         return
+
+    def print_confusion_matrix_no_params(self, file_statistiche):
+        with open('risultati_test/stat{}.txt'.format(file_statistiche), mode='a+') as results_file:
+            results_writer = csv.writer(results_file, delimiter=',', quoting=csv.QUOTE_MINIMAL)
+            results_writer.writerow(["a\t\tb\t<--classified as"])
+            results_writer.writerow(["{}\t{}\t\ta".format(self.a_a, self.a_b)])
+            results_writer.writerow(["{}\t\t{}\t\tb".format(self.b_a, self.b_b)])
+            results_writer.writerow(["\n\n"])
+        results_file.close()
+        return
+
+    def sum_confusion_matrix(self, other_matrix):
+        self.a_a += other_matrix.a_a
+        self.a_b += other_matrix.a_b
+        self.b_a += other_matrix.b_a
+        self.b_b += other_matrix.b_b
+        return self
+

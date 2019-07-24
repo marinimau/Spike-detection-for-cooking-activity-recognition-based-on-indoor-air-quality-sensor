@@ -112,7 +112,8 @@ class Run_all:
                     confusion_matrix = Confusion_matrix.calculate_confusion_matrix(Confusion_matrix(), day_data.is_pasto, calculated_intervals_bin)
                 params = "PARAMS: {}, {}, {}, {}, {}, {}, {}, {}".format(n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, max_small_tollerance, max_large_tollerance, n_peaks_large_tollerance)
                 Confusion_matrix.print_confusion_matrix(confusion_matrix, params)
-
+            else:
+                confusion_matrix = Confusion_matrix()
 
             # ---------------------------------------------------------------------------
             #  Disegnare grafico
@@ -172,8 +173,8 @@ class Run_all:
             else:
                 (fi, ri, si) = Intervals_test.count_intervals_test(Intervals_test(), calculated_intervals_bin, day_data.is_pasto)
             min_dist = Intervals_test.count_avg_min_dist(Intervals_test(), calculated_intervals, pasto_intervals.interval_list)
-            return fi, ri, si, min_dist
-        return 0, 0, 0, 0
+            return fi, ri, si, min_dist, confusion_matrix
+        return 0, 0, 0, 0, Confusion_matrix()
 
 
     def add_to_list(self,parent_list, to_append):
