@@ -14,6 +14,7 @@ from data_analysis import peaks_detector as pd
 from data_testing.intervals_test import Intervals_test
 from data_manager.data_prefab import DataPrefab
 from params import Params
+from confusion_matrix.generate_confusion_matrix import Confusion_matrix
 
 style.use('ggplot')
 
@@ -101,8 +102,17 @@ class Run_all:
 
             calculated_intervals, calculated_intervals_bin = PredictedInterval.predict_intervals(PredictedInterval(), peaks_list, day_data.datetime, max_num_intervals, start_small_tollerance, start_high_tollerance, n_peaks_large_tollerance)
 
-            # get_peaks prende dati, priminenza iniziale, e numero di picchi da trovare,
-            # agisce sul valore della prominenza per trovarne il numero richiesto.
+            # ---------------------------------------------------------------------------
+            #   Scrivere la matrice di confusione
+            # ---------------------------------------------------------------------------
+            if Params.write_confusion_matrix:
+                if Params.use_raw_data:
+                    confusion_matrix = Confusion_matrix.calculate_confusion_matrix(Confusion_matrix(), day_data.activity, calculated_intervals_bin)
+                else:
+                    confusion_matrix = Confusion_matrix.calculate_confusion_matrix(Confusion_matrix(), day_data.is_pasto, calculated_intervals_bin)
+                params = "PARAMS: {}, {}, {}, {}, {}, {}, {}, {}".format(n_peaks_co2_to_find, n_peaks_tvoc_to_find, n_peaks_pm25_to_find, n_peaks_temp_to_find, n_peaks_humidity_to_find, max_small_tollerance, max_large_tollerance, n_peaks_large_tollerance)
+                Confusion_matrix.print_confusion_matrix(confusion_matrix, params)
+
 
             # ---------------------------------------------------------------------------
             #  Disegnare grafico
