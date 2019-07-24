@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e4174ed-4a73-4028-aa62-b9652013285b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/confusion_matrix/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confusion_matrix_results/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_vector_results/feature_vector.csv" beforeDir="false" afterPath="$PROJECT_DIR$/feature_vector_results/feature_vector.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_loop/run_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_loop/run_all.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/params.py" beforeDir="false" afterPath="$PROJECT_DIR$/params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat2.txt" afterDir="false" />
@@ -25,15 +20,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/params.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_analysis/interval_detector.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="32">
@@ -45,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_testing/execute_for_all_sample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="48" column="61" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="61" />
+            <state relative-caret-position="264">
+              <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
               <folding>
                 <element signature="e#97#134#0" expanded="true" />
               </folding>
@@ -55,19 +41,51 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6921">
+              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/risultati_test/stat4.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-501" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="201">
+              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9741">
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/risultati_test/stat3.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-12304" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_testing/run_test_in_parallel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="-148">
+              <caret line="23" column="90" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
               <folding>
                 <element signature="e#89#141#0" expanded="true" />
               </folding>
@@ -78,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_loop/run_all.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="112" column="254" selection-start-line="112" selection-start-column="254" selection-end-line="112" selection-end-column="254" />
+            <state relative-caret-position="-731">
+              <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
               <folding>
                 <element signature="e#79#115#0" expanded="true" />
               </folding>
@@ -90,7 +108,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt">
           <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="-32536" />
+            <state relative-caret-position="141">
+              <caret line="12844" column="16" selection-start-line="12844" selection-start-column="16" selection-end-line="12844" selection-end-column="16" />
+            </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
             <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -108,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>: 0.59</find>
       <find>precision test: 0.5</find>
       <find>precision test: 0.40</find>
       <find>precision test: 0.47</find>
@@ -138,6 +157,7 @@
       <find>print</find>
       <find>counter</find>
       <find>day_intr</find>
+      <find>conf</find>
     </findStrings>
     <replaceStrings>
       <replace>Params</replace>
@@ -166,7 +186,6 @@
         <option value="$PROJECT_DIR$/data_analysis/interval_detector.py" />
         <option value="$PROJECT_DIR$/data_testing/raw_data_extractor.py" />
         <option value="$PROJECT_DIR$/data_manager/elaborated_data_extractor.py" />
-        <option value="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/1.csv" />
         <option value="$PROJECT_DIR$/data_analysis/params.py" />
         <option value="$PROJECT_DIR$/data_manager/data_prefab.py" />
@@ -185,9 +204,10 @@
         <option value="$PROJECT_DIR$/data_files/raw_data_files/7.csv" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/8.csv" />
         <option value="$PROJECT_DIR$/feature_vector/generate_feature_vector.py" />
-        <option value="$PROJECT_DIR$/main_loop/run_all.py" />
         <option value="$PROJECT_DIR$/params.py" />
         <option value="$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt" />
+        <option value="$PROJECT_DIR$/main_loop/run_all.py" />
+        <option value="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" />
         <option value="$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py" />
       </list>
     </option>
@@ -214,12 +234,17 @@
             <path>
               <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
               <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="confusion_matrix_results" type="462c0819:PsiDirectoryNode" />
+              <item name="file" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
               <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="main_loop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tesi" type="462c0819:PsiDirectoryNode" />
+              <item name="risultati_test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -391,7 +416,7 @@
       <workItem from="1563616679419" duration="322000" />
       <workItem from="1563887189781" duration="1933000" />
       <workItem from="1563898472975" duration="444000" />
-      <workItem from="1563959066752" duration="4145000" />
+      <workItem from="1563959066752" duration="5749000" />
     </task>
     <task id="LOCAL-00001" summary="alcuni cambiament, va continuato">
       <created>1563061867421</created>
@@ -463,11 +488,25 @@
       <option name="project" value="LOCAL" />
       <updated>1563888317204</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="generata confusion matrix">
+      <created>1563963771073</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1563963771073</updated>
+    </task>
+    <task id="LOCAL-00012" summary="avg confusion matrix">
+      <created>1563970582735</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1563970582735</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160962000" />
+    <option name="totallyTimeSpent" value="162566000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,7 +521,7 @@
     <frame x="0" y="23" width="1440" height="833" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.1695279" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.1695279" />
       <window_info id="Structure" order="1" sideWeight="0.5034674" side_tool="true" weight="0.13741721" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -497,7 +536,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12732475" side_tool="true" weight="0.3259053" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49944812" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.87267524" visible="true" weight="0.3259053" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.87267524" visible="true" weight="0.3259053" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -544,7 +583,9 @@
     <MESSAGE value="feature vector funzionante" />
     <MESSAGE value="integrati i dati grezzi e refactor di tutta la struttura" />
     <MESSAGE value="refactoring dei parametri" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring dei parametri" />
+    <MESSAGE value="generata confusion matrix" />
+    <MESSAGE value="avg confusion matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="avg confusion matrix" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tesi$main.coverage" NAME="main Coverage Results" MODIFIED="1563115508083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -649,22 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat3.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat4.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature_vector_results/feature_vector.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
       <provider editor-type-id="text-editor" />
@@ -682,23 +707,6 @@
     <entry file="file://$PROJECT_DIR$/results.csv">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_testing/execute_for_all_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="48" column="61" selection-start-line="48" selection-start-column="61" selection-end-line="48" selection-end-column="61" />
-          <folding>
-            <element signature="e#97#134#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_analysis/interval_detector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_analysis/peaks_detector.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -721,19 +729,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_testing/run_test_in_parallel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#89#141#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-32536" />
+        <state relative-caret-position="141">
+          <caret line="12844" column="16" selection-start-line="12844" selection-start-column="16" selection-end-line="12844" selection-end-column="16" />
+        </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -741,18 +741,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main_loop/run_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="112" column="254" selection-start-line="112" selection-start-column="254" selection-end-line="112" selection-end-column="254" />
+        <state relative-caret-position="-731">
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
           <folding>
             <element signature="e#79#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_testing/run_test_in_parallel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-148">
+          <caret line="23" column="90" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+          <folding>
+            <element signature="e#89#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_testing/execute_for_all_sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
+          <folding>
+            <element signature="e#97#134#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/interval_detector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="201">
+          <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9741">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12304" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-501" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6921">
+          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
         </state>
       </provider>
     </entry>

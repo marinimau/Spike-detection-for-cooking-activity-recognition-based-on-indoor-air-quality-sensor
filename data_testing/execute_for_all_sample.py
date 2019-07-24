@@ -64,7 +64,6 @@ class Main:
                 stat_writer.writerow(["Precision test: {}".format(precision_test/count_test)])
                 stat_writer.writerow(["Avg min dist: {}".format(min_dist_tot / count_test)])
                 if(Params.write_confusion_matrix):
-                    stat_writer.writerow(["Confusion matrix of dataset:\n\n"])
                     Confusion_matrix.print_confusion_matrix_no_params(confusion_matrix_tot, file_statistiche)
                 stat_writer.writerow(["---------------------------------------------------"])
         else:
