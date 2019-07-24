@@ -4,7 +4,6 @@
 #   File: data_analysis/interval_finder.py
 #
 
-import operator
 
 
 class PredictedInterval:
