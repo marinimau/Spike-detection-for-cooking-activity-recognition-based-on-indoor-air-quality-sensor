@@ -8,19 +8,23 @@ class Params:
     # ---------------------------------------------------------------------------
     #  Lanciare i test
     # ---------------------------------------------------------------------------
-    run_test = True
+    run_test = False
     # ---------------------------------------------------------------------------
     #  Generare il feature vector
     # ---------------------------------------------------------------------------
     generate_feature_vector = False
     # ---------------------------------------------------------------------------
+    #  Generare il complete feature vector  --> solo se use_raw_data = True
+    # ---------------------------------------------------------------------------
+    generate_complete_feature_vector = True
+    # ---------------------------------------------------------------------------
     #  Feature vector params
     # ---------------------------------------------------------------------------
-    n_peaks_co2_feature_vector = 15
-    n_peaks_tvoc_feature_vector = 7
-    n_peaks_pm25_feature_vector = 1
-    n_peaks_temp_feature_vector = 1
-    n_peaks_humidity_feature_vector = 2
+    n_peaks_co2_feature_vector = 20
+    n_peaks_tvoc_feature_vector = 14
+    n_peaks_pm25_feature_vector = 14
+    n_peaks_temp_feature_vector = 10
+    n_peaks_humidity_feature_vector = 20
     # ---------------------------------------------------------------------------
     #   Confusion matrix   ---> solo se run_test = True
     # ---------------------------------------------------------------------------

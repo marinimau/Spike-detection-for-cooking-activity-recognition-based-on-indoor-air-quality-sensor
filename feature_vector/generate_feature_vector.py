@@ -9,7 +9,7 @@ from data_manager import data_adapter as ad_data
 from params import Params
 import csv
 
-use_incomplete_sample = True
+use_incomplete_sample = Params.use_incomplete_sample
 
 n_peaks_co2_to_find = Params.n_peaks_co2_feature_vector
 n_peaks_tvoc_to_find = Params.n_peaks_tvoc_feature_vector
@@ -177,3 +177,4 @@ class FeatureVectorGenerator:
                 co2_p, tvoc_p, pm25_p, temp_p, hum_p = self.find_peaks(day_data)
                 self.print_feature(co2_p, tvoc_p, pm25_p, temp_p, hum_p, day_data)
         return
+

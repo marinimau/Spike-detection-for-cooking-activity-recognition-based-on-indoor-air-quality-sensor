@@ -1,5 +1,3 @@
-
-
 "Confusion matrix of dataset:
 
 "
@@ -94,34 +92,6 @@ a		b	<--classified as
 
 "
 4,3,2,1,1,7,14,3
-Recall test: 0.523913043478261
-Precision test: 0.5688405797101449
-Avg min dist: 91.40217391304348
----------------------------------------------------
-"Confusion matrix of dataset:
-
-"
-a		b	<--classified as
-30572	1125		a
-661		407		b
-"
-
-"
-4,3,2,1,1,7,8,3
-Recall test: 0.523913043478261
-Precision test: 0.5688405797101449
-Avg min dist: 91.40217391304348
----------------------------------------------------
-"Confusion matrix of dataset:
-
-"
-a		b	<--classified as
-30572	1125		a
-661		407		b
-"
-
-"
-4,3,2,1,1,7,9,3
 Recall test: 0.523913043478261
 Precision test: 0.5688405797101449
 Avg min dist: 91.40217391304348

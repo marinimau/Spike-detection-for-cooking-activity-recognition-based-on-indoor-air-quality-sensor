@@ -2,14 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e4174ed-4a73-4028-aa62-b9652013285b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/feature_vector/generate_complete_feature_vector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature_vector_results/complete_feature_vector.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_vector/generate_feature_vector.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_vector/generate_feature_vector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/params.py" beforeDir="false" afterPath="$PROJECT_DIR$/params.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/risultati_test/stat4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.csh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/easy_install-3.7" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/easy_install-3.7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/f2py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/f2py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/f2py3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/f2py3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/f2py3.7" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/f2py3.7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/pip3.7" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/pip3.7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python3" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/bin/python3.7" beforeDir="false" afterPath="$PROJECT_DIR$/venv/bin/python3.7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/kiwisolver-1.1.0.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.1.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.1.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.1.1.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/matplotlib-3.1.1.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy-1.16.4.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy-1.16.4.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy-1.16.4.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy-1.16.4.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/include/numpy/_numpyconfig.h" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/include/numpy/_numpyconfig.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/lib/libnpymath.a" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/lib/libnpymath.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/lib/npy-pkg-config/mlib.ini" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/lib/npy-pkg-config/mlib.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyparsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pyparsing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy-1.3.0.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy-1.3.0.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy-1.3.0.dist-info/WHEEL" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy-1.3.0.dist-info/WHEEL" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/__config__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/__config__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/optimize/_shgo_lib/sobol_vec.gz" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/optimize/_shgo_lib/sobol_vec.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/special/tests/data/boost.npz" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/special/tests/data/boost.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/special/tests/data/gsl.npz" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/special/tests/data/gsl.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/special/tests/data/local.npz" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/scipy/special/tests/data/local.npz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-40.8.0-py3.7.egg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/setuptools-40.8.0-py3.7.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,101 +59,57 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_analysis/interval_detector.py">
+        <entry file="file://$PROJECT_DIR$/params.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_testing/execute_for_all_sample.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
-              <folding>
-                <element signature="e#97#134#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="225">
+              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6921">
-              <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            <state relative-caret-position="330">
+              <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+              <folding>
+                <element signature="e#59#108#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/risultati_test/stat4.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-501" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py">
+        <entry file="file://$PROJECT_DIR$/feature_vector/generate_complete_feature_vector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
+            <state relative-caret-position="191">
+              <caret line="81" column="74" selection-start-line="81" selection-start-column="74" selection-end-line="81" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_analysis/peaks_detector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9741">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="315">
+              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/risultati_test/stat3.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12304" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_testing/run_test_in_parallel.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-148">
-              <caret line="23" column="90" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
-              <folding>
-                <element signature="e#89#141#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main_loop/run_all.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-731">
-              <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
-              <folding>
-                <element signature="e#79#115#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="141">
-              <caret line="12844" column="16" selection-start-line="12844" selection-start-column="16" selection-end-line="12844" selection-end-column="16" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -128,9 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>precision test: 0.5</find>
-      <find>precision test: 0.40</find>
-      <find>precision test: 0.47</find>
       <find>: 0.58</find>
       <find>Precision test: 0.39</find>
       <find>Precision test: 0.7</find>
@@ -158,9 +150,19 @@
       <find>counter</find>
       <find>day_intr</find>
       <find>conf</find>
+      <find>use_raw</find>
+      <find>next_and_pref</find>
+      <find>'hum'</find>
     </findStrings>
     <replaceStrings>
       <replace>Params</replace>
+      <replace>next_and_prev</replace>
+      <replace>daydata.co2</replace>
+      <replace>day_data.co2</replace>
+      <replace>day_data.tvoc</replace>
+      <replace>day_data.pm25</replace>
+      <replace>day_data.temperature</replace>
+      <replace>day_data.humidity</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -190,11 +192,6 @@
         <option value="$PROJECT_DIR$/data_analysis/params.py" />
         <option value="$PROJECT_DIR$/data_manager/data_prefab.py" />
         <option value="$PROJECT_DIR$/data_testing/run_test_in_parallel.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/risultati_test/stat3.txt" />
-        <option value="$PROJECT_DIR$/risultati_test/stat4.txt" />
-        <option value="$PROJECT_DIR$/risultati_test/stat2.txt" />
-        <option value="$PROJECT_DIR$/risultati_test/stat1.txt" />
         <option value="$PROJECT_DIR$/data_manager/raw_data_extractor.py" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/2.csv" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/3.csv" />
@@ -203,12 +200,19 @@
         <option value="$PROJECT_DIR$/data_files/raw_data_files/6.csv" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/7.csv" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/8.csv" />
-        <option value="$PROJECT_DIR$/feature_vector/generate_feature_vector.py" />
-        <option value="$PROJECT_DIR$/params.py" />
         <option value="$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt" />
         <option value="$PROJECT_DIR$/main_loop/run_all.py" />
         <option value="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" />
         <option value="$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py" />
+        <option value="$PROJECT_DIR$/risultati_test/stat1.txt" />
+        <option value="$PROJECT_DIR$/risultati_test/stat2.txt" />
+        <option value="$PROJECT_DIR$/risultati_test/stat3.txt" />
+        <option value="$PROJECT_DIR$/risultati_test/stat4.txt" />
+        <option value="$PROJECT_DIR$/feature_vector/generate_feature_vector.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/feature_vector_results/completefeature_vector.csv" />
+        <option value="$PROJECT_DIR$/params.py" />
+        <option value="$PROJECT_DIR$/feature_vector/generate_complete_feature_vector.py" />
       </list>
     </option>
   </component>
@@ -223,7 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,28 +237,29 @@
             <path>
               <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
               <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
+              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tesi" type="462c0819:PsiDirectoryNode" />
+              <item name="feature_vector_results" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
               <item name="tesi" type="462c0819:PsiDirectoryNode" />
               <item name="main_loop" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="risultati_test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/feature_vector_results" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -267,14 +271,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data_files/raw_data_files" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/data_manager" />
       <recent name="$PROJECT_DIR$/data_files" />
       <recent name="$PROJECT_DIR$/data_testing" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/feature_vector_results" />
+      <recent name="$PROJECT_DIR$/feature_vector" />
+      <recent name="$PROJECT_DIR$/data_files/raw_data_files" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -290,28 +296,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.main">
-    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="tesi" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="tesi" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -375,6 +359,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.params" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.main" />
@@ -417,6 +405,7 @@
       <workItem from="1563887189781" duration="1933000" />
       <workItem from="1563898472975" duration="444000" />
       <workItem from="1563959066752" duration="5749000" />
+      <workItem from="1563973684079" duration="12209000" />
     </task>
     <task id="LOCAL-00001" summary="alcuni cambiament, va continuato">
       <created>1563061867421</created>
@@ -506,7 +495,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162566000" />
+    <option name="totallyTimeSpent" value="174775000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -518,10 +507,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="833" extended-state="6" />
+    <frame x="62" y="27" width="1858" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.1695279" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.17163356" />
       <window_info id="Structure" order="1" sideWeight="0.5034674" side_tool="true" weight="0.13741721" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -536,7 +525,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12732475" side_tool="true" weight="0.3259053" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49944812" weight="0.3293348" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.87267524" visible="true" weight="0.3259053" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.87267524" visible="true" weight="0.32606325" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -588,8 +577,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="avg confusion matrix" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/tesi$main.coverage" NAME="main Coverage Results" MODIFIED="1563115508083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/tesi$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1563616686113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/tesi$main.coverage" NAME="main Coverage Results" MODIFIED="1563115508083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/numeric.py">
@@ -680,40 +669,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="169" selection-start-line="169" selection-end-line="169" />
-          <folding>
-            <element signature="e#93#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_vector_results/feature_vector.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <element signature="e#59#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/results.csv">
-      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="LargeFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_analysis/peaks_detector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
+      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_analysis/intervals_finder.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -722,46 +680,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/params.py">
+    <entry file="file://$PROJECT_DIR$/data_analysis/interval_detector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="141">
-          <caret line="12844" column="16" selection-start-line="12844" selection-start-column="16" selection-end-line="12844" selection-end-column="16" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_loop/run_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
-          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
-          <folding>
-            <element signature="e#79#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_testing/run_test_in_parallel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-148">
-          <caret line="23" column="90" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
-          <folding>
-            <element signature="e#89#141#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data_testing/execute_for_all_sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
+        <state relative-caret-position="900">
           <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
           <folding>
             <element signature="e#97#134#0" expanded="true" />
@@ -769,41 +697,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_analysis/interval_detector.py">
+    <entry file="file://$PROJECT_DIR$/data_testing/run_test_in_parallel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
+        <state relative-caret-position="330">
+          <caret line="23" column="90" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+          <folding>
+            <element signature="e#89#141#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
+        <state relative-caret-position="266">
           <caret line="47" column="26" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
+    <entry file="file://$PROJECT_DIR$/main_loop/run_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9741">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="163">
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
+          <folding>
+            <element signature="e#79#115#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding>
+            <element signature="e#93#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector_results/completefeature_vector.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector_results/feature_vector.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector_results/complete_feature_vector.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/risultati_test/stat3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/peaks_detector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12304" />
+        <state relative-caret-position="315">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector/generate_complete_feature_vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="81" column="74" selection-start-line="81" selection-start-column="74" selection-end-line="81" selection-end-column="74" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/risultati_test/stat4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-501" />
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/risultati_test/stat1.txt">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6921">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        <state relative-caret-position="330">
+          <caret line="22" column="74" selection-start-line="22" selection-start-column="74" selection-end-line="22" selection-end-column="74" />
+          <folding>
+            <element signature="e#59#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
