@@ -79,11 +79,18 @@ class CompleteFeatureVectorGenerator:
         avg_temp = data.temperature
         avg_hum = data.humidity
 
-        co2_peaks = pd.get_peaks(avg_co2, 60, 0.6, 1, n_peaks_co2_to_find)
-        tvoc_peaks = pd.get_peaks(avg_tvoc, 60, 0.9, 1, n_peaks_tvoc_to_find)
-        pm25_peaks = pd.get_pm25_peaks(avg_pm25, 70, n_peaks_pm25_to_find)
-        temp_peaks = pd.get_peaks(avg_temp, 20, 10, 1, n_peaks_temp_to_find)
+        if Params.consider_peaks_weight:
+            co2_peaks = pd.get_peaks_with_weight(avg_co2, 60, 0.6, 1, n_peaks_co2_to_find)
+            tvoc_peaks = pd.get_peaks_with_weight(avg_tvoc, 60, 0.9, 1, n_peaks_tvoc_to_find)
+            temp_peaks = pd.get_peaks_with_weight(avg_temp, 20, 10, 1, n_peaks_temp_to_find)
+        else:
+            co2_peaks = pd.get_peaks(avg_co2, 60, 0.6, 1, n_peaks_co2_to_find)
+            tvoc_peaks = pd.get_peaks(avg_tvoc, 60, 0.9, 1, n_peaks_tvoc_to_find)
+            temp_peaks = pd.get_peaks(avg_temp, 20, 10, 1, n_peaks_temp_to_find)
+
         humidity_peaks = pd.get_peaks(avg_hum, 60, [10, 30], 1, n_peaks_humidity_to_find)
+        pm25_peaks = pd.get_pm25_peaks(avg_pm25, 70, n_peaks_pm25_to_find)
+
         return co2_peaks, tvoc_peaks, pm25_peaks, temp_peaks, humidity_peaks
 
     def count_peaks_in_inteval(self, peaks, value, interval):
@@ -101,7 +108,7 @@ class CompleteFeatureVectorGenerator:
         count_prev = 0
         count_next = 0
         tot_prev = 0
-        tot_next=0
+        tot_next = 0
         for i in range(len(datetime)):
             if datetime[i]== current_minute:
                 for j in range(interval+1):
@@ -119,7 +126,12 @@ class CompleteFeatureVectorGenerator:
             counter += 1
             if day_data.datetime[i] == minute:
                 break
-        if day_data.activity[counter] == 0:
+        # scelgo se usare tutte le attività o solo quelle che includono un fornello
+        if Params.use_only_cooker_actvity:
+            pasto = day_data.fornello
+        else:
+            pasto = day_data.activity
+        if pasto[counter] == 0:
             return 'N'
         else:
             return 'Y'

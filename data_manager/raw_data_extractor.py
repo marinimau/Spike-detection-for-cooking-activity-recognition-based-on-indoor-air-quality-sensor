@@ -6,7 +6,6 @@
 
 import csv
 
-
 class RawDataSet:
 
     def __init__(self):
