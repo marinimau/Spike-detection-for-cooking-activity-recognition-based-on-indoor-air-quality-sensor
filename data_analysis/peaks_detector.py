@@ -55,10 +55,10 @@ def split_intervals(data, datetime):
     intr2 = []
     intr3 = []
     for i in range(len(datetime)):
-        if 330 <= datetime[i] <= 630:
+        if 440 <= datetime[i] <= 540:
             intr1.append(data[i])
-        if 631 <= datetime[i] <= 930:
+        if 745 <= datetime[i] <= 825:
             intr2.append(data[i])
-        if 1020 <= datetime[i] <= 1380:
+        if 1135 <= datetime[i] <= 1370:
             intr3.append(data[i])
     return intr1, intr2, intr3

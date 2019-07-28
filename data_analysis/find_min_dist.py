@@ -15,7 +15,7 @@ class DistFinder:
         return co2_dist, tvoc_dist, pm25_dist, temp_dist, hum_dist
 
     def find_dist(self, current_min, peaks):
-        dist = 10000
+        dist = 1000000
         for p in peaks:
             if abs(current_min - p) < dist:
                 dist = current_min - p

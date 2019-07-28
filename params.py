@@ -9,6 +9,7 @@ class Params:
     #  Lanciare i test
     # ---------------------------------------------------------------------------
     run_test = False
+    auto_run = True
     # ---------------------------------------------------------------------------
     #  Generare il feature vector
     # ---------------------------------------------------------------------------
@@ -20,7 +21,7 @@ class Params:
     use_only_cooker_actvity = False
     generate_complete_feature_vector = False
     consider_peaks_weight = False
-    evaluate_distance_in_complete_feature_vector = True
+    evaluate_distance_in_complete_feature_vector = True  # questo
     # ---------------------------------------------------------------------------
     #  Feature vector params
     # ---------------------------------------------------------------------------
@@ -33,11 +34,11 @@ class Params:
     #  Find peaks by interval
     # ---------------------------------------------------------------------------
     find_peaks_by_intervals = True
-    n_peaks_co2_by_interval = (1, 3, 3)
-    n_peaks_tvoc_by_interval = (1, 3, 3)
-    n_peaks_pm25_by_interval = (0, 1, 1)
-    n_peaks_temp_by_interval = (0, 1, 1)
-    n_peaks_humidity_by_interval = (1, 2, 2)
+    n_peaks_co2_by_interval = (1, 1, 1)
+    n_peaks_tvoc_by_interval = (1, 1, 1)
+    n_peaks_pm25_by_interval = (1, 1, 1)
+    n_peaks_temp_by_interval = (1, 1, 1)
+    n_peaks_humidity_by_interval = (1, 1, 1)
     # ---------------------------------------------------------------------------
     #   Confusion matrix   ---> solo se run_test = True
     # ---------------------------------------------------------------------------
@@ -47,13 +48,13 @@ class Params:
     # ---------------------------------------------------------------------------
     draw_chart = False
     print_curve = False
+    auto = True
     print_picchi = False
     print_picchi_allineati = True
     # ---------------------------------------------------------------------------
     #  Parametri dati
     # ---------------------------------------------------------------------------
     use_raw_data = True
-    auto = True
     use_incomplete_sample = False
     use_avg = True
     # ---------------------------------------------------------------------------
@@ -64,7 +65,7 @@ class Params:
     # ---------------------------------------------------------------------------
     #  Dati per singola misurazione
     # ---------------------------------------------------------------------------
-    SENSOR = 2
+    SENSOR = SENSOR_intr[0]
     DAY = 1
     # ---------------------------------------------------------------------------
     #  Parametri per trovare gli intervalli

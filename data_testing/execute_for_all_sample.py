@@ -15,7 +15,7 @@ import csv
 class Main:
     use_avg = Params.use_avg
     draw_chart = Params.draw_chart
-    auto = Params.auto
+    auto = Params.auto_run
     SENSOR = Params.SENSOR
     DAY = Params.DAY
 
