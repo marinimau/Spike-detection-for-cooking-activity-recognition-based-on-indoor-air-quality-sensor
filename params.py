@@ -18,8 +18,9 @@ class Params:
     #  Generare il complete feature vector  --> solo se use_raw_data = True
     # ---------------------------------------------------------------------------
     use_only_cooker_actvity = False
-    generate_complete_feature_vector = True
+    generate_complete_feature_vector = False
     consider_peaks_weight = False
+    evaluate_distance_in_complete_feature_vector = True
     # ---------------------------------------------------------------------------
     #  Feature vector params
     # ---------------------------------------------------------------------------
@@ -28,6 +29,15 @@ class Params:
     n_peaks_pm25_feature_vector = 2
     n_peaks_temp_feature_vector = 1
     n_peaks_humidity_feature_vector = 5
+    # ---------------------------------------------------------------------------
+    #  Find peaks by interval
+    # ---------------------------------------------------------------------------
+    find_peaks_by_intervals = True
+    n_peaks_co2_by_interval = (1, 3, 3)
+    n_peaks_tvoc_by_interval = (1, 3, 3)
+    n_peaks_pm25_by_interval = (0, 1, 1)
+    n_peaks_temp_by_interval = (0, 1, 1)
+    n_peaks_humidity_by_interval = (1, 2, 2)
     # ---------------------------------------------------------------------------
     #   Confusion matrix   ---> solo se run_test = True
     # ---------------------------------------------------------------------------

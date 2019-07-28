@@ -34,7 +34,7 @@ def get_peaks_changing_width(data, distance, width, prominence, num_peaks):
 
 
 # il pm 2.5 necessita di una funzione particolare
-def get_pm25_peaks(data, height ,num_peaks):
+def get_pm25_peaks(data, height, num_peaks):
     peaks, _ = find_peaks(data, height=height)
     if len(peaks) > num_peaks:
         return get_pm25_peaks(data, height+2, num_peaks)
@@ -48,3 +48,17 @@ def get_peaks_with_weight(data, distance, width, prominence, num_peaks):
         found_p = get_peaks_changing_width(data, distance, width, prominence, i)
         peaks += found_p
     return peaks
+
+
+def split_intervals(data, datetime):
+    intr1 = []
+    intr2 = []
+    intr3 = []
+    for i in range(len(datetime)):
+        if 330 <= datetime[i] <= 630:
+            intr1.append(data[i])
+        if 631 <= datetime[i] <= 930:
+            intr2.append(data[i])
+        if 1020 <= datetime[i] <= 1380:
+            intr3.append(data[i])
+    return intr1, intr2, intr3
