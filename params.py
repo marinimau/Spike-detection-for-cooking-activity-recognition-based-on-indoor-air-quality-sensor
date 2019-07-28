@@ -13,12 +13,13 @@ class Params:
     #  Generare il feature vector
     # ---------------------------------------------------------------------------
     generate_feature_vector = False
+    feature_vector_dataset = 2
     # ---------------------------------------------------------------------------
     #  Generare il complete feature vector  --> solo se use_raw_data = True
     # ---------------------------------------------------------------------------
-    use_only_cooker_actvity = True
+    use_only_cooker_actvity = False
     generate_complete_feature_vector = True
-    consider_peaks_weight = True
+    consider_peaks_weight = False
     # ---------------------------------------------------------------------------
     #  Feature vector params
     # ---------------------------------------------------------------------------
@@ -48,12 +49,12 @@ class Params:
     # ---------------------------------------------------------------------------
     #  Intervallo dati
     # ---------------------------------------------------------------------------
-    SENSOR_intr = (1, 2)
+    SENSOR_intr = (2, 3)
     DAY_intr = (1, 32)
     # ---------------------------------------------------------------------------
     #  Dati per singola misurazione
     # ---------------------------------------------------------------------------
-    SENSOR = 1
+    SENSOR = 2
     DAY = 1
     # ---------------------------------------------------------------------------
     #  Parametri per trovare gli intervalli

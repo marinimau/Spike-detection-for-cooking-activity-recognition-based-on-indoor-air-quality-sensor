@@ -62,7 +62,7 @@ class CompleteFeatureVectorGenerator:
         return
 
     def get_data(self, DAY):
-        day_data = DataPrefab.get_data_by_sensor_and_day(self.dataset, 1, DAY)
+        day_data = DataPrefab.get_data_by_sensor_and_day(self.dataset, Params.feature_vector_dataset, DAY)
         n_rilevazioni = len(day_data.datetime)
         if n_rilevazioni >= 1000 or use_incomplete_sample:
             return day_data
