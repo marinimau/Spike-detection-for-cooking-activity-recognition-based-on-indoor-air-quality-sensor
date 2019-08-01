@@ -92,7 +92,6 @@ class DistanceCompleteFeatureVectorGenerator:
 
         humidity_peaks = pd.get_peaks(avg_hum, 60, [10, 30], 1, n_peaks_humidity_to_find)
         pm25_peaks = pd.get_pm25_peaks(avg_pm25, 70, n_peaks_pm25_to_find)
-
         return co2_peaks, tvoc_peaks, pm25_peaks, temp_peaks, humidity_peaks
 
     def find_peak_using_intervals(self, data):
@@ -108,7 +107,7 @@ class DistanceCompleteFeatureVectorGenerator:
         temp_peaks = []
         hum_peaks = []
 
-        # qua splitta secondo intervalli
+        # considera solo 3: colazione, pranzo e cena, anziché l'intera giornata
         co2_intervals = pd.split_intervals(avg_co2, data.datetime)
         tvoc_intervals = pd.split_intervals(avg_tvoc, data.datetime)
         pm25_intervals = pd.split_intervals(avg_pm25, data.datetime)
@@ -118,26 +117,30 @@ class DistanceCompleteFeatureVectorGenerator:
         # per ogni parametro e per ogni intervallo, trova i picchi e concatena
         for i in range(3):
             if Params.consider_peaks_weight:
-                co2_peaks += pd.get_peaks_with_weight(co2_intervals[i], 60, 0.6, 1, Params.n_peaks_co2_by_interval[i])
-                tvoc_peaks += pd.get_peaks_with_weight(tvoc_intervals[i], 60, 0.9, 1, Params.n_peaks_tvoc_by_interval[i])
-                temp_peaks += pd.get_peaks_with_weight(temp_intervals[i], 20, 10, 1, Params.n_peaks_temp_by_interval[i])
+                co2_peaks += pd.get_peaks_with_weight(co2_intervals[i], 1, 0.6, 1, Params.n_peaks_co2_by_interval[i])
+                tvoc_peaks += pd.get_peaks_with_weight(tvoc_intervals[i], 1, 0.9, 1,
+                                                       Params.n_peaks_tvoc_by_interval[i])
+                temp_peaks += pd.get_peaks_with_weight(temp_intervals[i], 1, 10, 1, Params.n_peaks_temp_by_interval[i])
+                hum_peaks += pd.get_peaks_with_weight(hum_intervals[i], 1, 30, 1,
+                                                      Params.n_peaks_humidity_by_interval[i])
+                pm25_peaks += pd.get_peaks_with_weight(pm25_intervals[i], 1, 2, 1, Params.n_peaks_pm25_by_interval[i])
             else:
-                co2_peaks += pd.get_peaks(co2_intervals[i], 60, 0.6, 1, Params.n_peaks_co2_by_interval[i])
-                tvoc_peaks += pd.get_peaks(tvoc_intervals[i], 60, 0.9, 1, Params.n_peaks_tvoc_by_interval[i])
-                temp_peaks += pd.get_peaks(temp_intervals[i], 20, 10, 1, Params.n_peaks_temp_by_interval[i])
-
-            hum_peaks += pd.get_peaks(hum_intervals[i], 60, [10, 30], 1, Params.n_peaks_humidity_by_interval[i])
-            pm25_peaks += pd.get_pm25_peaks(pm25_intervals[i], 70, Params.n_peaks_pm25_by_interval[i])
+                co2_peaks += pd.get_peaks(co2_intervals[i], 1, 0.6, 1, Params.n_peaks_co2_by_interval[i])
+                tvoc_peaks += pd.get_peaks(tvoc_intervals[i], 1, 0.9, 1, Params.n_peaks_tvoc_by_interval[i])
+                temp_peaks += pd.get_peaks(temp_intervals[i], 1, 10, 1, Params.n_peaks_temp_by_interval[i])
+                hum_peaks += pd.get_peaks(hum_intervals[i], 1, 1, 1,
+                                          Params.n_peaks_humidity_by_interval[i])
+                pm25_peaks += pd.get_peaks(pm25_intervals[i], 10, 1, 1, Params.n_peaks_pm25_by_interval[i])
         return co2_peaks, tvoc_peaks, pm25_peaks, temp_peaks, hum_peaks
 
-    def count_peaks_in_inteval(self, peaks, value, interval):
+    def count_peaks_in_inteval(self, peaks, minute, interval):
         counter_last = 0
         counter_next = 0
 
         for p in peaks:
-            if value - interval <= p <= value:
+            if minute - interval <= p <= minute:
                 counter_last += 1
-            if value <= p <= value + interval:
+            if minute <= p <= minute + interval:
                 counter_next += 1
         return counter_last, counter_next
 
@@ -321,6 +324,15 @@ class DistanceCompleteFeatureVectorGenerator:
                      min_dist_pm25, min_dist_temp, min_dist_hum, pasto])
         return
 
+    def convert_peaks(self, datetime, co2_p, tvoc_p, pm25_p, temp_p, hum_p):
+        return self.do_convert(datetime, co2_p), self.do_convert(datetime, tvoc_p), self.do_convert(datetime, pm25_p), self.do_convert(datetime, temp_p), self.do_convert(datetime, hum_p)
+
+    def do_convert(self, datetime, peaks):
+        converted_peaks = []
+        for p in peaks:
+            converted_peaks.append(datetime[p])
+        return converted_peaks
+
     def generate(self):
         self.init_csv_file()
         for day in range(Params.DAY_intr[0], Params.DAY_intr[1]):
@@ -331,5 +343,7 @@ class DistanceCompleteFeatureVectorGenerator:
                     co2_p, tvoc_p, pm25_p, temp_p, hum_p = self.find_peak_using_intervals(day_data)
                 else:
                     co2_p, tvoc_p, pm25_p, temp_p, hum_p = self.find_peaks(day_data)
-                self.print_feature(co2_p, tvoc_p, pm25_p, temp_p, hum_p, day_data)
+                #converted_co2, converted_tvoc, converted_pm25, converted_temp, converted_hum = co2_p, tvoc_p, pm25_p, temp_p, hum_p
+                converted_co2, converted_tvoc, converted_pm25, converted_temp, converted_hum = self.convert_peaks(day_data.datetime, co2_p, tvoc_p, pm25_p, temp_p, hum_p)
+                self.print_feature(converted_co2, converted_tvoc, converted_pm25, converted_temp, converted_hum, day_data)
         return

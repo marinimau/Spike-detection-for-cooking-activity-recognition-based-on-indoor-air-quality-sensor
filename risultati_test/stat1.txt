@@ -96,3 +96,87 @@ Recall test: 0.523913043478261
 Precision test: 0.5688405797101449
 Avg min dist: 91.40217391304348
 ---------------------------------------------------
+"Confusion matrix of dataset:
+
+"
+a		b	<--classified as
+39815	1031		a
+2200		533		b
+"
+
+"
+4,3,2,1,1,7,8,3
+Recall test: 0.41388888888888886
+Precision test: 0.63
+Avg min dist: 31.860000000000003
+---------------------------------------------------
+"Confusion matrix of dataset:
+
+"
+a		b	<--classified as
+39815	1031		a
+2200		533		b
+"
+
+"
+4,3,2,1,1,7,8,3
+Recall test: 0.41388888888888886
+Precision test: 0.63
+Avg min dist: 31.860000000000003
+---------------------------------------------------
+"Confusion matrix of dataset:
+
+"
+a		b	<--classified as
+39815	1031		a
+2200		533		b
+"
+
+"
+4,3,2,1,1,7,9,3
+Recall test: 0.41388888888888886
+Precision test: 0.63
+Avg min dist: 31.860000000000003
+---------------------------------------------------
+"Confusion matrix of dataset:
+
+"
+a		b	<--classified as
+39815	1031		a
+2200		533		b
+"
+
+"
+4,3,2,1,1,7,10,3
+Recall test: 0.41388888888888886
+Precision test: 0.63
+Avg min dist: 31.860000000000003
+---------------------------------------------------
+"Confusion matrix of dataset:
+
+"
+a		b	<--classified as
+39815	1031		a
+2200		533		b
+"
+
+"
+4,3,2,1,1,7,11,3
+Recall test: 0.41388888888888886
+Precision test: 0.63
+Avg min dist: 31.860000000000003
+---------------------------------------------------
+"Confusion matrix of dataset:
+
+"
+a		b	<--classified as
+39815	1031		a
+2200		533		b
+"
+
+"
+4,3,2,1,1,7,12,3
+Recall test: 0.41388888888888886
+Precision test: 0.63
+Avg min dist: 31.860000000000003
+---------------------------------------------------

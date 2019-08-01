@@ -9,6 +9,7 @@ from feature_vector.generate_complete_feature_vector import CompleteFeatureVecto
 from feature_vector.generate_feature_vector_with_distance import DistanceCompleteFeatureVectorGenerator
 from data_manager.data_prefab import DataPrefab
 from params import Params
+import pandas as pd
 
 class Main:
 

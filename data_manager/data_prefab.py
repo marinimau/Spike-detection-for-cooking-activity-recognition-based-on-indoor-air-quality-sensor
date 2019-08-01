@@ -23,7 +23,7 @@ class DataPrefab:
                 day_data = sensor_data.get_data_by_day(day)
                 index = sensor*100+day
                 print("Index: {}".format(index))
-                self.data += [(sensor*100+day, day_data)] # simile alla numerazione delle camere degli alberghi
+                self.data += [(index, day_data)]
         return self
 
     def get_data_by_sensor_and_day(self, sensor, day):

@@ -2,13 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e4174ed-4a73-4028-aa62-b9652013285b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_analysis/find_min_dist.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_files/feature_collega/2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/feature_vector_results/complete_feature_vector_concatenate.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_analysis/find_min_dist.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis/find_min_dist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis/peaks_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis/peaks_detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_manager/data_prefab.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_manager/data_prefab.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/feature_vector_results/complete_feature_vector.csv" beforeDir="false" afterPath="$PROJECT_DIR$/feature_vector_results/complete_feature_vector.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/params.py" beforeDir="false" afterPath="$PROJECT_DIR$/params.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/risultati_test/stat4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/risultati_test/stat4.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_analysis/peaks_detector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+            <state relative-caret-position="960">
+              <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
               <folding>
                 <element signature="e#90#125#0" expanded="true" />
               </folding>
@@ -30,20 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1860">
-              <caret line="129" column="102" selection-start-line="129" selection-start-column="102" selection-end-line="129" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="113" selection-start-line="26" selection-start-column="113" selection-end-line="26" selection-end-column="113" />
+            <state relative-caret-position="405">
+              <caret line="27" column="113" selection-start-line="27" selection-start-column="113" selection-end-line="27" selection-end-column="113" />
               <folding>
                 <element signature="e#59#108#0" expanded="true" />
               </folding>
@@ -54,8 +54,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/params.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+            <state relative-caret-position="-408">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1290">
+              <caret line="190" column="31" lean-forward="true" selection-start-line="190" selection-start-column="31" selection-end-line="190" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_analysis/find_min_dist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="99" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -71,10 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Precision test: 0.39</find>
-      <find>Precision test: 0.7</find>
-      <find>Precision test: 0.4</find>
-      <find>precision test: 0.51</find>
       <find>: 0.57</find>
       <find>: 0.6148</find>
       <find>: 0.4</find>
@@ -101,6 +115,10 @@
       <find>next_and_pref</find>
       <find>'hum'</find>
       <find>find_pe</find>
+      <find>sensor</find>
+      <find>alse</find>
+      <find>SENSOR</find>
+      <find>split</find>
     </findStrings>
     <replaceStrings>
       <replace>Params</replace>
@@ -137,7 +155,6 @@
         <option value="$PROJECT_DIR$/data_manager/elaborated_data_extractor.py" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/1.csv" />
         <option value="$PROJECT_DIR$/data_analysis/params.py" />
-        <option value="$PROJECT_DIR$/data_manager/data_prefab.py" />
         <option value="$PROJECT_DIR$/data_testing/run_test_in_parallel.py" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/2.csv" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/3.csv" />
@@ -148,7 +165,6 @@
         <option value="$PROJECT_DIR$/data_files/raw_data_files/8.csv" />
         <option value="$PROJECT_DIR$/confusion_matrix_results/confusion_matrix.txt" />
         <option value="$PROJECT_DIR$/main_loop/run_all.py" />
-        <option value="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" />
         <option value="$PROJECT_DIR$/confusion_matrix/generate_confusion_matrix.py" />
         <option value="$PROJECT_DIR$/risultati_test/stat1.txt" />
         <option value="$PROJECT_DIR$/risultati_test/stat2.txt" />
@@ -158,19 +174,21 @@
         <option value="$PROJECT_DIR$/feature_vector_results/completefeature_vector.csv" />
         <option value="$PROJECT_DIR$/data_manager/raw_data_extractor.py" />
         <option value="$PROJECT_DIR$/feature_vector/generate_complete_feature_vector.py" />
-        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" />
+        <option value="$PROJECT_DIR$/data_analysis/peaks_detector.py" />
         <option value="$PROJECT_DIR$/data_analysis/find_min_dist.py" />
         <option value="$PROJECT_DIR$/params.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/data_manager/data_prefab.py" />
         <option value="$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py" />
-        <option value="$PROJECT_DIR$/data_analysis/peaks_detector.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="444" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="1067" />
     <option name="y" value="27" />
-    <option name="width" value="1442" />
-    <option name="height" value="834" />
+    <option name="width" value="853" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -193,6 +211,27 @@
             <path>
               <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
               <item name="tesi" type="462c0819:PsiDirectoryNode" />
+              <item name="data_files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tesi" type="462c0819:PsiDirectoryNode" />
+              <item name="data_files" type="462c0819:PsiDirectoryNode" />
+              <item name="feature_collega" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tesi" type="462c0819:PsiDirectoryNode" />
+              <item name="data_manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tesi" type="462c0819:PsiDirectoryNode" />
+              <item name="data_testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tesi" type="462c0819:PsiDirectoryNode" />
               <item name="feature_vector" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -209,7 +248,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/feature_vector_results" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_files/feature_collega" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -228,6 +267,7 @@
       <recent name="$PROJECT_DIR$/data_testing" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data_files/feature_collega" />
       <recent name="$PROJECT_DIR$/feature_vector_results" />
       <recent name="$PROJECT_DIR$/feature_vector" />
       <recent name="$PROJECT_DIR$/data_files/raw_data_files" />
@@ -359,7 +399,13 @@
       <workItem from="1564043411824" duration="3644000" />
       <workItem from="1564047471155" duration="6136000" />
       <workItem from="1564245865482" duration="1956000" />
-      <workItem from="1564307131947" duration="7900000" />
+      <workItem from="1564307131947" duration="10678000" />
+      <workItem from="1564327711389" duration="7027000" />
+      <workItem from="1564394217324" duration="437000" />
+      <workItem from="1564408873350" duration="1803000" />
+      <workItem from="1564477499471" duration="20685000" />
+      <workItem from="1564570601983" duration="2188000" />
+      <workItem from="1564657121243" duration="6889000" />
     </task>
     <task id="LOCAL-00001" summary="alcuni cambiament, va continuato">
       <created>1563061867421</created>
@@ -466,11 +512,25 @@
       <option name="project" value="LOCAL" />
       <updated>1564309325688</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="splitta intervalli per cercare meglio i picchi e cerca distanza implementati">
+      <created>1564319485866</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1564319485866</updated>
+    </task>
+    <task id="LOCAL-00017" summary="successo a 67.7">
+      <created>1564335356003</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1564335356004</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194843000" />
+    <option name="totallyTimeSpent" value="236650000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,29 +542,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="60" y="27" width="1860" height="1053" extended-state="6" />
+    <frame x="1068" y="27" width="852" height="1053" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4965326" visible="true" weight="0.17916207" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4965326" weight="0.3939052" />
       <window_info id="Structure" order="1" sideWeight="0.5034674" side_tool="true" weight="0.13741721" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49889624" weight="0.3293348" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49834985" weight="0.3293348" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.7969095" weight="0.30098146" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49889624" weight="0.3991276" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49834985" weight="0.3991276" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49944812" weight="0.3293348" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.12732475" side_tool="true" weight="0.3259053" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20993228" side_tool="true" weight="0.32388222" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49944812" weight="0.3293348" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.87267524" visible="true" weight="0.32497275" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.79006773" weight="0.32497275" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.499187" weight="0.3397711" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.499187" weight="0.33938393" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -552,11 +612,14 @@
     <MESSAGE value="trovata una combinazione che fa andare bene i test con weka" />
     <MESSAGE value="implementato calcolo del peso dei picchi, aggiunta possibilità di usare solo i fornelli per il feature vector" />
     <MESSAGE value="ultime modifiche prima di introdurre nuova roba" />
-    <option name="LAST_COMMIT_MESSAGE" value="ultime modifiche prima di introdurre nuova roba" />
+    <MESSAGE value="splitta intervalli per cercare meglio i picchi e cerca distanza implementati" />
+    <MESSAGE value="successo a 67.7%" />
+    <MESSAGE value="successo a 67.7" />
+    <option name="LAST_COMMIT_MESSAGE" value="successo a 67.7" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tesi$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1563616686113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/tesi$main.coverage" NAME="main Coverage Results" MODIFIED="1563115508083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tesi$main.coverage" NAME="main Coverage Results" MODIFIED="1564516262917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/core/numeric.py">
@@ -602,23 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_manager/elaborated_data_extractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="273" column="24" selection-start-line="273" selection-start-column="24" selection-end-line="273" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_manager/data_prefab.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="23" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding>
-            <element signature="e#86#144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/numpy/lib/npyio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -633,7 +679,6 @@
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_files/raw_data_files/1.csv" />
-    <entry file="file://$PROJECT_DIR$/data_files/raw_data_files/2.csv" />
     <entry file="file://$PROJECT_DIR$/data_files/raw_data_files/3.csv" />
     <entry file="file://$PROJECT_DIR$/data_files/raw_data_files/4.csv" />
     <entry file="file://$PROJECT_DIR$/data_files/raw_data_files/5.csv" />
@@ -655,16 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="89" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_testing/execute_for_all_sample.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="65" column="50" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
-          <folding>
-            <element signature="e#97#134#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -698,16 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
-          <folding>
-            <element signature="e#93#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature_vector_results/completefeature_vector.csv" />
     <entry file="file://$PROJECT_DIR$/feature_vector_results/feature_vector.csv">
       <provider selected="true" editor-type-id="text-editor" />
@@ -724,20 +749,6 @@
     <entry file="file://$PROJECT_DIR$/risultati_test/stat2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature_vector/generate_complete_feature_vector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="263" column="67" lean-forward="true" selection-end-line="290" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_analysis/find_min_dist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_manager/raw_data_extractor.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -745,48 +756,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/feature_vector_results/complete_feature_vector.csv">
-      <provider editor-type-id="csv-text-editor">
-        <state relative-caret-position="-12735" />
-      </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-14895" />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-945" />
+    <entry file="file://$PROJECT_DIR$/data_files/raw_data_files/2.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="-11025" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/params.py">
+    <entry file="file://$PROJECT_DIR$/data_manager/elaborated_data_extractor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+        <state relative-caret-position="179">
+          <caret line="273" column="67" selection-start-line="273" selection-start-column="61" selection-end-line="273" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/data_testing/execute_for_all_sample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="113" selection-start-line="26" selection-start-column="113" selection-end-line="26" selection-end-column="113" />
+        <state relative-caret-position="112">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
-            <element signature="e#59#108#0" expanded="true" />
+            <element signature="e#97#134#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector/generate_complete_feature_vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3885">
+          <caret line="263" column="67" selection-end-line="290" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector_results/complete_feature_vector.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-945" />
+      </provider>
+      <provider editor-type-id="csv-text-editor">
+        <state>
+          <caret column="67" selection-start-column="67" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+          <folding>
+            <element signature="e#93#140#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/feature_collega/2.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_analysis/peaks_detector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
+        <state relative-caret-position="960">
+          <caret line="65" column="17" selection-start-line="65" selection-start-column="17" selection-end-line="65" selection-end-column="17" />
           <folding>
             <element signature="e#90#125#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_analysis/find_min_dist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="99" selection-start-line="10" selection-start-column="99" selection-end-line="10" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector_results/complete_feature_vector_concatenate.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="135">
+          <caret line="9" column="129" selection-start-line="9" selection-start-column="129" selection-end-line="9" selection-end-column="129" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="106" selection-start-line="8" selection-start-column="106" selection-end-line="8" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_manager/data_prefab.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="25" lean-forward="true" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="e#86#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="113" selection-start-line="27" selection-start-column="113" selection-end-line="27" selection-end-column="113" />
+          <folding>
+            <element signature="e#59#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1860">
-          <caret line="129" column="102" selection-start-line="129" selection-start-column="102" selection-end-line="129" selection-end-column="102" />
+        <state relative-caret-position="-1290">
+          <caret line="190" column="31" lean-forward="true" selection-start-line="190" selection-start-column="31" selection-end-line="190" selection-end-column="31" />
         </state>
       </provider>
     </entry>

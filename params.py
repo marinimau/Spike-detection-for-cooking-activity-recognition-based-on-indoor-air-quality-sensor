@@ -22,6 +22,7 @@ class Params:
     generate_complete_feature_vector = False
     consider_peaks_weight = False
     evaluate_distance_in_complete_feature_vector = True  # questo
+    concatenate_csv = True
     # ---------------------------------------------------------------------------
     #  Feature vector params
     # ---------------------------------------------------------------------------
@@ -36,9 +37,15 @@ class Params:
     find_peaks_by_intervals = True
     n_peaks_co2_by_interval = (1, 1, 1)
     n_peaks_tvoc_by_interval = (1, 1, 1)
-    n_peaks_pm25_by_interval = (1, 1, 1)
+    n_peaks_pm25_by_interval = (1, 1, 1)  # defalult 1, 1, 1
     n_peaks_temp_by_interval = (1, 1, 1)
     n_peaks_humidity_by_interval = (1, 1, 1)
+    # ---------------------------------------------------------------------------
+    #   Intervalli pasto
+    # ---------------------------------------------------------------------------
+    colazione = (440, 540)
+    pranzo = (745, 825)
+    cena = (1135, 1370)  # default (1135, 1370)
     # ---------------------------------------------------------------------------
     #   Confusion matrix   ---> solo se run_test = True
     # ---------------------------------------------------------------------------

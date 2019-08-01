@@ -11,7 +11,7 @@ from params import Params
 def get_peaks(data, distance, width, prominence, num_peaks):
     peaks, _ = find_peaks(data, distance=distance, width=width, prominence=prominence)
     if len(peaks) > num_peaks:
-        return get_peaks(data, distance, width, prominence+1, num_peaks)
+        return get_peaks(data, distance, width+2, prominence+2, num_peaks)
     else:
         results = []
         # necessario perché numpy restituisce un proprio formato, iterabile ma non concatenabile a una lista normale
@@ -55,10 +55,15 @@ def split_intervals(data, datetime):
     intr2 = []
     intr3 = []
     for i in range(len(datetime)):
-        if 440 <= datetime[i] <= 540:
-            intr1.append(data[i])
-        if 745 <= datetime[i] <= 825:
-            intr2.append(data[i])
-        if 1135 <= datetime[i] <= 1370:
-            intr3.append(data[i])
+        intr1.append(0)
+        intr2.append(0)
+        intr3.append(0)
+
+    for i in range(len(datetime)):
+        if Params.colazione[0] <= datetime[i] <= Params.colazione[1]:
+            intr1[i] = data[i]
+        if Params.pranzo[0] <= datetime[i] <= Params.pranzo[1]:
+            intr2[i] = data[i]
+        if Params.cena[0] <= datetime[i] <= Params.cena[1]:
+            intr3[i] = data[i]
     return intr1, intr2, intr3
