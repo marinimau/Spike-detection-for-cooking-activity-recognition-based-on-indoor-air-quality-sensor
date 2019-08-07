@@ -8,6 +8,7 @@ from feature_vector.generate_feature_vector import FeatureVectorGenerator
 from feature_vector.generate_complete_feature_vector import CompleteFeatureVectorGenerator
 from feature_vector.generate_feature_vector_with_distance import DistanceCompleteFeatureVectorGenerator
 from feature_vector.generate_feature_vector_only_peaks_features import PeaksFeatureVectorGenerator
+from make_traning_sets.training_sets import TrainingSet
 from data_manager.data_prefab import DataPrefab
 from params import Params
 import pandas as pd
@@ -29,6 +30,9 @@ class Main:
             DistanceCompleteFeatureVectorGenerator.generate(DistanceCompleteFeatureVectorGenerator(self.dataset))
         if Params.feature_vector_only_peaks:
             PeaksFeatureVectorGenerator.generate(PeaksFeatureVectorGenerator(self.dataset))
+        if Params.make_training_sets:
+            TrainingSet.make_all_training_sets(TrainingSet())
+
 
 
 Main.execute(Main())

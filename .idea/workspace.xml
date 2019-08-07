@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e4174ed-4a73-4028-aa62-b9652013285b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/feature_vector/generate_feature_vector_only_peaks_features.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/make_traning_sets/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/make_traning_sets/training_sets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_files/raw_data_files/1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/raw_data_files/1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_files/raw_data_files/2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/raw_data_files/2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_files/raw_data_files/3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/raw_data_files/3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_files/raw_data_files/4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/raw_data_files/4.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_files/raw_data_files/5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/raw_data_files/5.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_files/raw_data_files/6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/raw_data_files/6.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_files/raw_data_files/7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/raw_data_files/7.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_files/raw_data_files/8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_files/raw_data_files/8.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_manager/data_prefab.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_manager/data_prefab.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_manager/raw_data_extractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_manager/raw_data_extractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feature_vector_results/complete_feature_vector.csv" beforeDir="false" afterPath="$PROJECT_DIR$/feature_vector_results/complete_feature_vector.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/params.py" beforeDir="false" afterPath="$PROJECT_DIR$/params.py" afterDir="false" />
     </list>
@@ -30,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/params.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+            <state relative-caret-position="297">
+              <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -39,21 +28,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_manager/raw_data_extractor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="957">
-              <caret line="87" column="40" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
+            <state>
+              <caret selection-end-line="4" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+              <folding>
+                <element signature="e#59#108#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/make_traning_sets/training_sets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_files/raw_data_files/5.csv">
-          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="-2340" />
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector_only_peaks_features.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2970">
+            <state relative-caret-position="627">
               <caret line="218" column="57" selection-start-line="218" selection-start-column="57" selection-end-line="218" selection-end-column="57" />
             </state>
           </provider>
@@ -149,7 +161,6 @@
         <option value="$PROJECT_DIR$/data_testing/execute_for_all_sample.py" />
         <option value="$PROJECT_DIR$/data_analysis/peaks_detector.py" />
         <option value="$PROJECT_DIR$/data_analysis/find_min_dist.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/2.csv" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/3.csv" />
@@ -161,8 +172,10 @@
         <option value="$PROJECT_DIR$/data_manager/raw_data_extractor.py" />
         <option value="$PROJECT_DIR$/data_files/raw_data_files/8.csv" />
         <option value="$PROJECT_DIR$/data_manager/data_prefab.py" />
-        <option value="$PROJECT_DIR$/params.py" />
         <option value="$PROJECT_DIR$/feature_vector/generate_feature_vector_only_peaks_features.py" />
+        <option value="$PROJECT_DIR$/params.py" />
+        <option value="$PROJECT_DIR$/make_traning_sets/training_sets.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -177,7 +190,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -185,41 +197,11 @@
               <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
               <item name="tesi" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="data_analysis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="data_files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="data_files" type="462c0819:PsiDirectoryNode" />
-              <item name="raw_data_files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="data_manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="feature_vector" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="tesi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="tesi" type="462c0819:PsiDirectoryNode" />
-              <item name="feature_vector_results" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -387,7 +369,8 @@
       <workItem from="1564768546994" duration="5000" />
       <workItem from="1564912086303" duration="127000" />
       <workItem from="1565079862241" duration="5797000" />
-      <workItem from="1565167579617" duration="3214000" />
+      <workItem from="1565167579617" duration="4141000" />
+      <workItem from="1565175065961" duration="1744000" />
     </task>
     <task id="LOCAL-00001" summary="alcuni cambiament, va continuato">
       <created>1563061867421</created>
@@ -515,11 +498,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564670959642</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="suddivisione dei feature vector in dataset">
+      <created>1565171306231</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1565171306232</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253916000" />
+    <option name="totallyTimeSpent" value="256587000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -532,9 +522,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="27" width="1864" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48949918" visible="true" weight="0.20517051" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48949918" visible="true" weight="0.20737074" />
       <window_info id="Structure" order="1" sideWeight="0.5105008" side_tool="true" weight="0.2029703" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -549,7 +538,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.20993228" side_tool="true" weight="0.32388222" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49944812" weight="0.3293348" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.79006773" visible="true" weight="0.32497275" />
+      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.79006773" visible="true" weight="0.32497275" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -605,14 +594,14 @@
     <MESSAGE value="successo a 67.7%" />
     <MESSAGE value="successo a 67.7" />
     <MESSAGE value="sistemati alcuni bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="sistemati alcuni bug" />
+    <MESSAGE value="suddivisione dei feature vector in dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="suddivisione dei feature vector in dataset" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/tesi$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1563616686113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/tesi$main.coverage" NAME="main Coverage Results" MODIFIED="1564516262917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/statistiche.csv" />
     <entry file="file://$PROJECT_DIR$/risultati_test/stat16.txt" />
     <entry file="file://$PROJECT_DIR$/data_testing/intervals_test.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -659,8 +648,8 @@
       <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/results.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
       <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/data_analysis/intervals_finder.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -781,16 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="43" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="43" />
-          <folding>
-            <element signature="e#59#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector_with_distance.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="417">
@@ -825,24 +804,17 @@
     <entry file="file://$PROJECT_DIR$/data_files/raw_data_files/8.csv">
       <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_manager/raw_data_extractor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="957">
-          <caret line="87" column="40" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/feature_vector_results/complete_feature_vector.csv">
       <provider editor-type-id="csv-text-editor">
         <state>
           <caret column="67" selection-start-column="67" selection-end-column="67" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="-11385" />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-945" />
+      </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="-11385" />
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -865,31 +837,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/feature_vector_results/peaks_feature_4.csv" />
+    <entry file="file://$PROJECT_DIR$/feature_vector_results/peaks_feature_2.csv" />
+    <entry file="file://$PROJECT_DIR$/feature_vector_results/peaks_feature_1.csv" />
     <entry file="file://$PROJECT_DIR$/data_files/raw_data_files/5.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_vector_results/peaks_feature_4.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="-1755" />
+        <state relative-caret-position="-2340" />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_vector_results/peaks_feature_2.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_vector_results/peaks_feature_1.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/feature_vector/generate_feature_vector_only_peaks_features.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2970">
+        <state relative-caret-position="627">
           <caret line="218" column="57" selection-start-line="218" selection-start-column="57" selection-end-line="218" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_manager/raw_data_extractor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make_traning_sets/training_sets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+          <folding>
+            <element signature="e#59#108#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

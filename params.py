@@ -16,6 +16,10 @@ class Params:
     generate_feature_vector = False
     feature_vector_dataset = 2
     # ---------------------------------------------------------------------------
+    #  Make training sets
+    # ---------------------------------------------------------------------------
+    make_training_sets = True
+    # ---------------------------------------------------------------------------
     #  Generare il complete feature vector  --> solo se use_raw_data = True
     # ---------------------------------------------------------------------------
     use_only_cooker_actvity = False
