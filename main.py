@@ -7,6 +7,7 @@ from data_testing.run_test_in_parallel import Run
 from feature_vector.generate_feature_vector import FeatureVectorGenerator
 from feature_vector.generate_complete_feature_vector import CompleteFeatureVectorGenerator
 from feature_vector.generate_feature_vector_with_distance import DistanceCompleteFeatureVectorGenerator
+from feature_vector.generate_feature_vector_only_peaks_features import PeaksFeatureVectorGenerator
 from data_manager.data_prefab import DataPrefab
 from params import Params
 import pandas as pd
@@ -26,5 +27,8 @@ class Main:
             CompleteFeatureVectorGenerator.generate(CompleteFeatureVectorGenerator(self.dataset))
         if Params.evaluate_distance_in_complete_feature_vector and Params.use_raw_data:
             DistanceCompleteFeatureVectorGenerator.generate(DistanceCompleteFeatureVectorGenerator(self.dataset))
+        if Params.feature_vector_only_peaks:
+            PeaksFeatureVectorGenerator.generate(PeaksFeatureVectorGenerator(self.dataset))
+
 
 Main.execute(Main())

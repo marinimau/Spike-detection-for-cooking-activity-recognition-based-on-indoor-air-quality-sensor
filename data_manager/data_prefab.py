@@ -14,7 +14,7 @@ class DataPrefab:
         return
 
     def generate_data_from_entire_sample(self):
-        for sensor in range(Params.SENSOR_intr[0], Params.SENSOR_intr[1]):
+        for sensor in Params.SENSOR_list:
             for day in range(Params.DAY_intr[0], Params.DAY_intr[1]):
                 if Params.use_raw_data:
                     sensor_data = RawDataSet.extract_data_from_sensor(RawDataSet(), sensor)

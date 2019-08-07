@@ -21,8 +21,9 @@ class Params:
     use_only_cooker_actvity = False
     generate_complete_feature_vector = False
     consider_peaks_weight = False
-    evaluate_distance_in_complete_feature_vector = True  # questo
-    concatenate_csv = True
+    evaluate_distance_in_complete_feature_vector = False
+    feature_vector_only_peaks = True
+    concatenate_csv = False
     # ---------------------------------------------------------------------------
     #  Feature vector params
     # ---------------------------------------------------------------------------
@@ -62,12 +63,13 @@ class Params:
     #  Parametri dati
     # ---------------------------------------------------------------------------
     use_raw_data = True
-    use_incomplete_sample = False
+    use_incomplete_sample = True
     use_avg = True
     # ---------------------------------------------------------------------------
     #  Intervallo dati
     # ---------------------------------------------------------------------------
     SENSOR_intr = (2, 3)
+    SENSOR_list = (1, 2, 3, 4, 5, 6, 7, 8)
     DAY_intr = (1, 32)
     # ---------------------------------------------------------------------------
     #  Dati per singola misurazione

@@ -20,25 +20,7 @@ class RawDataSet:
         self.ozone = []
         self.no2 = []
         self.activity = []
-        self.caffe = []
-        self.croissant = []
-        self.pasta = []
-        self.legumi = []
-        self.piatti_freddi = []
-        self.sugo = []
-        self.panino = []
-        self.carne_in_padella = []
-        self.carne_in_umido = []
-        self.merendina = []
-        self.latte = []
-        self.verdure_cotte = []
-        self.pesce = []
-        self.yogurt = []
-        self.riso = []
-        self.window = []
         self.fornello = []
-        self.altro = []
-        self.micronde = []
         return
 
     def convert_daytime(self, datetime_string):
@@ -67,25 +49,7 @@ class RawDataSet:
                 self.ozone.append(float(row[8]))
                 self.no2.append(float(row[9]))
                 self.activity.append(row[10])
-                self.caffe.append(float(row[11]))
-                self.croissant.append(float(row[12]))
-                self.pasta.append(float(row[13]))
-                self.legumi.append(float(row[14]))
-                self.piatti_freddi.append(float(row[15]))
-                self.sugo.append(float(row[16]))
-                self.panino.append(float(row[17]))
-                self.carne_in_padella.append(float(row[18]))
-                self.carne_in_umido.append(float(row[19]))
-                self.merendina.append(float(row[20]))
-                self.latte.append(float(row[21]))
-                self.verdure_cotte.append(float(row[22]))
-                self.pesce.append(float(row[23]))
-                self.yogurt.append(float(row[24]))
-                self.riso.append(float(row[25]))
-                self.window.append(row[26])
-                self.fornello.append(float(row[27]))
-                self.altro.append(float(row[28]))
-                self.micronde.append(float(row[29]))
+                self.fornello.append(float(row[11]))
 
             return self
 
@@ -122,29 +86,9 @@ class RawDataSet:
         self.pressure.append(parent.pressure[row])
         self.ozone.append(parent.ozone[row])
         self.no2.append(parent.no2[row])
-
         if parent.activity[row] != 'None':
             self.activity.append(1)
         else:
             self.activity.append(0)
-
-        self.caffe.append(parent.caffe[row])
-        self.croissant.append(parent.croissant[row])
-        self.pasta.append(parent.pasta[row])
-        self.legumi.append(parent.legumi[row])
-        self.piatti_freddi.append(parent.piatti_freddi[row])
-        self.sugo.append(parent.sugo[row])
-        self.panino.append(parent.panino[row])
-        self.carne_in_padella.append(parent.carne_in_padella[row])
-        self.carne_in_umido.append(parent.carne_in_umido[row])
-        self.merendina.append(parent.merendina[row])
-        self.latte.append(parent.latte[row])
-        self.verdure_cotte.append(parent.verdure_cotte[row])
-        self.pesce.append(parent.pesce[row])
-        self.yogurt.append(parent.yogurt[row])
-        self.riso.append(parent.riso[row])
-        self.window.append(parent.window[row])
         self.fornello.append(parent.fornello[row])
-        self.altro.append(parent.altro[row])
-        self.micronde.append(parent.micronde[row])
         return

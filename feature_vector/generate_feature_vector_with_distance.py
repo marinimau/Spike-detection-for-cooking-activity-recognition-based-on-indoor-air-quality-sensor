@@ -343,7 +343,6 @@ class DistanceCompleteFeatureVectorGenerator:
                     co2_p, tvoc_p, pm25_p, temp_p, hum_p = self.find_peak_using_intervals(day_data)
                 else:
                     co2_p, tvoc_p, pm25_p, temp_p, hum_p = self.find_peaks(day_data)
-                #converted_co2, converted_tvoc, converted_pm25, converted_temp, converted_hum = co2_p, tvoc_p, pm25_p, temp_p, hum_p
                 converted_co2, converted_tvoc, converted_pm25, converted_temp, converted_hum = self.convert_peaks(day_data.datetime, co2_p, tvoc_p, pm25_p, temp_p, hum_p)
                 self.print_feature(converted_co2, converted_tvoc, converted_pm25, converted_temp, converted_hum, day_data)
         return
