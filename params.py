@@ -24,10 +24,11 @@ class Params:
     # ---------------------------------------------------------------------------
     use_only_cooker_actvity = False
     generate_complete_feature_vector = False
-    consider_peaks_weight = False
+    consider_peaks_weight = True
     evaluate_distance_in_complete_feature_vector = False
     feature_vector_only_peaks = True
     concatenate_csv = False
+    merge_feature_vector = True
     # ---------------------------------------------------------------------------
     #  Feature vector params
     # ---------------------------------------------------------------------------
@@ -40,16 +41,16 @@ class Params:
     #  Find peaks by interval
     # ---------------------------------------------------------------------------
     find_peaks_by_intervals = True
-    n_peaks_co2_by_interval = (1, 1, 1)
-    n_peaks_tvoc_by_interval = (1, 1, 1)
+    n_peaks_co2_by_interval = (1, 1, 1)  # defalult 1, 1, 1
+    n_peaks_tvoc_by_interval = (1, 1, 1)  # defalult 1, 1, 1
     n_peaks_pm25_by_interval = (1, 1, 1)  # defalult 1, 1, 1
-    n_peaks_temp_by_interval = (1, 1, 1)
-    n_peaks_humidity_by_interval = (1, 1, 1)
+    n_peaks_temp_by_interval = (1, 1, 1)  # defalult 1, 1, 1
+    n_peaks_humidity_by_interval = (1, 1, 1)  # defalult 1, 1, 1
     # ---------------------------------------------------------------------------
     #   Intervalli pasto
     # ---------------------------------------------------------------------------
-    colazione = (440, 540)
-    pranzo = (745, 825)
+    colazione = (440, 540)  # default (440, 540)
+    pranzo = (740, 825)  # default (745, 825)
     cena = (1135, 1370)  # default (1135, 1370)
     # ---------------------------------------------------------------------------
     #   Confusion matrix   ---> solo se run_test = True
@@ -73,8 +74,8 @@ class Params:
     #  Intervallo dati
     # ---------------------------------------------------------------------------
     SENSOR_intr = (2, 3)
-    SENSOR_list = (1, 2, 3, 4, 5, 6, 7, 8)
-    DAY_intr = (1, 32)
+    SENSOR_list = [2]  # [1, 2, 3, 4, 5, 6, 7, 8]
+    DAY_intr = (1, 41)
     # ---------------------------------------------------------------------------
     #  Dati per singola misurazione
     # ---------------------------------------------------------------------------

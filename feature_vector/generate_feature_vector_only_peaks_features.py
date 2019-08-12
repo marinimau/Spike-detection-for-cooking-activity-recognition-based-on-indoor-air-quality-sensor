@@ -31,7 +31,7 @@ class PeaksFeatureVectorGenerator:
         if sensor == 0:
             name = 'feature_vector_results/complete_feature_vector.csv'
         else:
-            name = 'feature_vector_results/by_dataset/peaks_feature_{}.csv'.format(sensor)
+            name = 'training_sets_results/peaks_feature_{}.csv'.format(sensor)
         with open(name, mode='w') as feature_vector_file:
             results_writer = csv.writer(feature_vector_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
             results_writer.writerow(
@@ -108,20 +108,20 @@ class PeaksFeatureVectorGenerator:
         # per ogni parametro e per ogni intervallo, trova i picchi e concatena
         for i in range(3):
             if Params.consider_peaks_weight:
-                co2_peaks += pd.get_peaks_with_weight(co2_intervals[i], 1, 0.6, 1, Params.n_peaks_co2_by_interval[i])
-                tvoc_peaks += pd.get_peaks_with_weight(tvoc_intervals[i], 1, 0.9, 1,
+                co2_peaks += pd.get_peaks_with_weight(co2_intervals[i], 1, 1, 1, Params.n_peaks_co2_by_interval[i])
+                tvoc_peaks += pd.get_peaks_with_weight(tvoc_intervals[i], 1, 1, 1,
                                                        Params.n_peaks_tvoc_by_interval[i])
-                temp_peaks += pd.get_peaks_with_weight(temp_intervals[i], 1, 10, 1, Params.n_peaks_temp_by_interval[i])
-                hum_peaks += pd.get_peaks_with_weight(hum_intervals[i], 1, 30, 1,
+                temp_peaks += pd.get_peaks_with_weight(temp_intervals[i], 1, 1, 1, Params.n_peaks_temp_by_interval[i])
+                hum_peaks += pd.get_peaks_with_weight(hum_intervals[i], 1, 1, 1,
                                                       Params.n_peaks_humidity_by_interval[i])
-                pm25_peaks += pd.get_peaks_with_weight(pm25_intervals[i], 1, 2, 1, Params.n_peaks_pm25_by_interval[i])
+                pm25_peaks += pd.get_peaks_with_weight(pm25_intervals[i], 1, 1, 1, Params.n_peaks_pm25_by_interval[i])
             else:
-                co2_peaks += pd.get_peaks(co2_intervals[i], 1, 0.6, 1, Params.n_peaks_co2_by_interval[i])
-                tvoc_peaks += pd.get_peaks(tvoc_intervals[i], 1, 0.9, 1, Params.n_peaks_tvoc_by_interval[i])
-                temp_peaks += pd.get_peaks(temp_intervals[i], 1, 10, 1, Params.n_peaks_temp_by_interval[i])
+                co2_peaks += pd.get_peaks(co2_intervals[i], 1, 0.6, 1, Params.n_peaks_co2_by_interval[i])  # DEFAULT 1. 0.6, 1
+                tvoc_peaks += pd.get_peaks(tvoc_intervals[i], 1, 0.9, 1, Params.n_peaks_tvoc_by_interval[i]) # DEFAULT  1, 0.9. 1
+                temp_peaks += pd.get_peaks(temp_intervals[i], 1, 10, 1, Params.n_peaks_temp_by_interval[i]) # DEFAULT  1, 10. 1
                 hum_peaks += pd.get_peaks(hum_intervals[i], 1, 1, 1,
-                                          Params.n_peaks_humidity_by_interval[i])
-                pm25_peaks += pd.get_peaks(pm25_intervals[i], 10, 1, 1, Params.n_peaks_pm25_by_interval[i])
+                                          Params.n_peaks_humidity_by_interval[i])  # DEFAULT  1, 1, 1
+                pm25_peaks += pd.get_peaks(pm25_intervals[i], 10, 1, 1, Params.n_peaks_pm25_by_interval[i]) # DEFAULT  10, 1. 1
         return co2_peaks, tvoc_peaks, pm25_peaks, temp_peaks, hum_peaks
 
     def count_peaks_in_inteval(self, peaks, minute, interval):
@@ -137,10 +137,10 @@ class PeaksFeatureVectorGenerator:
 
     def get_pasto_by_minute(self, day_data, minute):
         counter = 0
-        for i in range(len(day_data.datetime) - 1):
-            counter += 1
+        for i in range(len(day_data.datetime)-1):
             if day_data.datetime[i] == minute:
                 break
+            counter += 1
         # scelgo se usare tutte le attività o solo quelle che includono un fornello
         if Params.use_only_cooker_actvity:
             pasto = day_data.fornello
@@ -189,7 +189,6 @@ class PeaksFeatureVectorGenerator:
             hum_count_last25, hum_count_next25 = self.count_peaks_in_inteval(hum_p, day_data.datetime[i], 25)
             hum_count_last30, hum_count_next30 = self.count_peaks_in_inteval(hum_p, day_data.datetime[i], 30)
 
-            # min dist here
             min_dist_co2, min_dist_tvoc, min_dist_pm25, min_dist_temp, min_dist_hum = DistFinder.evaluate_dist(
                 DistFinder(), day_data.datetime[i], co2_p, tvoc_p, pm25_p, temp_p, hum_p)
 
@@ -216,7 +215,7 @@ class PeaksFeatureVectorGenerator:
                      min_dist_pm25, min_dist_temp, min_dist_hum, pasto])
                 feature_vector_file.close()
 
-            with open('feature_vector_results/by_dataset/peaks_feature_{}.csv'.format(sensor), mode='a+') as single_feature_vector_file:
+            with open('training_sets_results/peaks_feature_{}.csv'.format(sensor), mode='a+') as single_feature_vector_file:
                 results_writer = csv.writer(single_feature_vector_file, delimiter=',', quotechar='"',
                                             quoting=csv.QUOTE_MINIMAL)
                 results_writer.writerow(

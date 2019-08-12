@@ -8,6 +8,7 @@ from feature_vector.generate_feature_vector import FeatureVectorGenerator
 from feature_vector.generate_complete_feature_vector import CompleteFeatureVectorGenerator
 from feature_vector.generate_feature_vector_with_distance import DistanceCompleteFeatureVectorGenerator
 from feature_vector.generate_feature_vector_only_peaks_features import PeaksFeatureVectorGenerator
+from merge_feature_vectors.merge_features import Merged_feature
 from make_traning_sets.training_sets import TrainingSet
 from data_manager.data_prefab import DataPrefab
 from params import Params
@@ -32,6 +33,9 @@ class Main:
             PeaksFeatureVectorGenerator.generate(PeaksFeatureVectorGenerator(self.dataset))
         if Params.make_training_sets:
             TrainingSet.make_all_training_sets(TrainingSet())
+        if Params.merge_feature_vector:
+            for dataset in Params.SENSOR_list:
+                Merged_feature.merge_by_dataset(Merged_feature(), dataset)
 
 
 
