@@ -469,7 +469,7 @@ class Merged_feature:
 
 
         print(len(self.datetime) - len(raw_dataset.datetime))
-        for i in range(len(avg_features.datetime)):
+        for i in range(len(self.datetime)):
             if self.datetime[i] == raw_dataset.datetime[i] and ((self.is_pasto[i] == 'Y' and raw_dataset.activity[i] != 'None') or (self.is_pasto[i] == 'N' and raw_dataset.activity[i] == 'None')):
                 counter_equals += 1
             else:  # le tuple dei due feature vector non combaciano
@@ -480,8 +480,11 @@ class Merged_feature:
         counter_equals = 0
 
         j = 31
+        print(len(self.datetime) - len(avg_features.datetime))
+        self.del_offset(j)
+        print(len(self.datetime) - len(avg_features.datetime))
         for i in range(len(avg_features.datetime)):
-            if self.datetime[j] == avg_features.datetime[i] and ((self.is_pasto[j] == 'Y' and avg_features.is_pasto[i] == 1) or (self.is_pasto[j] == 'N' and avg_features.is_pasto[i] == 0)):
+            if self.datetime[i] == avg_features.datetime[i] and ((self.is_pasto[i] == 'Y' and avg_features.is_pasto[i] == 1) or (self.is_pasto[i] == 'N' and avg_features.is_pasto[i] == 0)):
                 counter_equals += 1
             else:  # le tuple dei due feature vector non combaciano
                 counter_difference += 1
@@ -596,13 +599,91 @@ class Merged_feature:
             self.s_diff_no2_15min = avg_features.s_diff_no2_15min
             self.s_diff_no2_20min = avg_features.s_diff_no2_20min
             self.s_diff_no2_25min = avg_features.s_diff_no2_25min
-        return
+        return len(avg_features.datetime)
 
-    def export_to_csv(self):
+    def del_offset(self, j):
+        del self.datetime[:j]
+        del self.co2_count_last5[:j]
+        del self.co2_count_next5[:j]
+        del self.co2_count_last10[:j]
+        del self.co2_count_next10[:j]
+        del self.co2_count_last15[:j]
+        del self.co2_count_next15[:j]
+        del self.co2_count_last20[:j]
+        del self.co2_count_next20[:j]
+        del self.co2_count_last25[:j]
+        del self.co2_count_next25[:j]
+        del self.co2_count_last30[:j]
+        del self.co2_count_next30[:j]
+        del self.tvoc_count_last5[:j]
+
+        del self.tvoc_count_next5[:j]
+        del self.tvoc_count_last10[:j]
+        del self.tvoc_count_next10[:j]
+        del self.tvoc_count_last15[:j]
+        del self.tvoc_count_next15[:j]
+        del self.tvoc_count_last20[:j]
+        del self.tvoc_count_next20[:j]
+        del self.tvoc_count_last25[:j]
+        del self.tvoc_count_next25[:j]
+        del self.tvoc_count_last30[:j]
+        del self.tvoc_count_next30[:j]
+
+        del self.pm25_count_last5[:j]
+        del self.pm25_count_next5[:j]
+        del self.pm25_count_last10[:j]
+        del self.pm25_count_next10[:j]
+        del self.pm25_count_last15[:j]
+        del self.pm25_count_next15[:j]
+        del self.pm25_count_last20[:j]
+        del self.pm25_count_next20[:j]
+        del self.pm25_count_last25[:j]
+        del self.pm25_count_next25[:j]
+        del self.pm25_count_last30[:j]
+        del self.pm25_count_next30[:j]
+
+        del self.temp_count_last5[:j]
+        del self.temp_count_next5[:j]
+        del self.temp_count_last10[:j]
+        del self.temp_count_next10[:j]
+        del self.temp_count_last15[:j]
+        del self.temp_count_next15[:j]
+        del self.temp_count_last20[:j]
+        del self.temp_count_next20[:j]
+        del self.temp_count_last25[:j]
+        del self.temp_count_next25[:j]
+        del self.temp_count_last30[:j]
+        del self.temp_count_next30[:j]
+
+        del self.hum_count_last5[:j]
+        del self.hum_count_next5[:j]
+        del self.hum_count_last10[:j]
+        del self.hum_count_next10[:j]
+        del self.hum_count_last15[:j]
+        del self.hum_count_next15[:j]
+        del self.hum_count_last20[:j]
+        del self.hum_count_next20[:j]
+        del self.hum_count_last25[:j]
+        del self.hum_count_next25[:j]
+        del self.hum_count_last30[:j]
+        del self.hum_count_next30[:j]
+
+        del self.min_dist_co2[:j]
+        del self.min_dist_tvoc[:j]
+        del self.min_dist_pm25[:j]
+        del self.min_dist_temp[:j]
+        del self.min_dist_hum[:j]
+
+        del self.is_pasto[:j]
+        return self
+
+
+
+    def export_to_csv(self, size):
         with open('feature_vector_results/merged_feature_vector.csv', mode='a+') as feature_vector_file:
             results_writer = csv.writer(feature_vector_file, delimiter=',', quotechar='"',
                                             quoting=csv.QUOTE_MINIMAL)
-            for i in range(30, len(self.datetime) - 61):
+            for i in range(size):
                 results_writer.writerow(
                     [self.co2_count_last5[i],
                         self.co2_count_next5[i],
@@ -784,6 +865,6 @@ class Merged_feature:
     def merge_by_dataset(self, dataset):
         self.init_csv()
         self.add_peaks_features(dataset)
-        self.add_avg_features(dataset)
-        self.export_to_csv()
+        size = self.add_avg_features(dataset)
+        self.export_to_csv(size)
         return
