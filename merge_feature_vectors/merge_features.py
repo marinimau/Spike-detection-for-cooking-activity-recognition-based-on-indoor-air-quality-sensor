@@ -858,7 +858,7 @@ class Merged_feature:
                         self.s_diff_no2_15min[i],
                         self.s_diff_no2_20min[i],
                         self.s_diff_no2_25min[i],
-                        self.datetime[i],
+                        int(self.datetime[i]),
                         self.is_pasto[i]])
         return
 
