@@ -7,10 +7,11 @@ import csv
 
 from data_manager.elaborated_data_extractor import DataSet
 from data_manager.raw_data_extractor import RawDataSet
+from params import Params
 import numpy as np
 
 
-class Merged_feature:
+class Merge_feature:
 
     def __init__(self):
         self.co2_count_last5 = []
@@ -194,8 +195,8 @@ class Merged_feature:
         self.is_pasto = []
         return
 
-    def init_csv(self):
-        with open('feature_vector_results/merged_feature_vector.csv', mode='w') as feature_vector_file:
+    def init_csv(self, dataset):
+        with open('feature_vector_results/merged_feature_vector_{}.csv'.format(dataset), mode='w') as feature_vector_file:
             results_writer = csv.writer(feature_vector_file, delimiter=',', quotechar='"',
                                             quoting=csv.QUOTE_MINIMAL)
             results_writer.writerow(
@@ -380,7 +381,7 @@ class Merged_feature:
 
     def add_peaks_features(self, dataset):
         counter = 0
-        with open('training_sets_results/peaks_feature_{}.csv'.format(dataset), 'r') as csv_file:
+        with open('peaks_features_results/peaks_feature_{}.csv'.format(dataset), 'r') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             for row in csv_reader:
                 if counter != 0:
@@ -467,8 +468,10 @@ class Merged_feature:
         counter_equals = 0
         counter_difference = 0
 
+        if len(self.datetime) - len(raw_dataset.datetime) != 0:
+            print("ERRORE: il fature vector non matcha con i dati")
+            return
 
-        print(len(self.datetime) - len(raw_dataset.datetime))
         for i in range(len(self.datetime)):
             if self.datetime[i] == raw_dataset.datetime[i] and ((self.is_pasto[i] == 'Y' and raw_dataset.activity[i] != 'None') or (self.is_pasto[i] == 'N' and raw_dataset.activity[i] == 'None')):
                 counter_equals += 1
@@ -479,10 +482,9 @@ class Merged_feature:
         counter_difference = 0
         counter_equals = 0
 
-        j = 31
-        print(len(self.datetime) - len(avg_features.datetime))
+        j = 31 # Offset
+
         self.del_offset(j)
-        print(len(self.datetime) - len(avg_features.datetime))
         for i in range(len(avg_features.datetime)):
             if self.datetime[i] == avg_features.datetime[i] and ((self.is_pasto[i] == 'Y' and avg_features.is_pasto[i] == 1) or (self.is_pasto[i] == 'N' and avg_features.is_pasto[i] == 0)):
                 counter_equals += 1
@@ -678,9 +680,8 @@ class Merged_feature:
         return self
 
 
-
-    def export_to_csv(self, size):
-        with open('feature_vector_results/merged_feature_vector.csv', mode='a+') as feature_vector_file:
+    def export_to_csv(self, size, dataset):
+        with open('feature_vector_results/merged_feature_vector_{}.csv'.format(dataset), mode='a+') as feature_vector_file:
             results_writer = csv.writer(feature_vector_file, delimiter=',', quotechar='"',
                                             quoting=csv.QUOTE_MINIMAL)
             for i in range(size):
@@ -863,8 +864,8 @@ class Merged_feature:
         return
 
     def merge_by_dataset(self, dataset):
-        self.init_csv()
+        self.init_csv(dataset)
         self.add_peaks_features(dataset)
         size = self.add_avg_features(dataset)
-        self.export_to_csv(size)
+        self.export_to_csv(size, dataset)
         return

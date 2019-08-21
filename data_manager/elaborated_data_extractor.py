@@ -318,15 +318,15 @@ class DataSet:
         current_row=0 #references all the rows
 
         for current_datetime in self.datetime:
-            if current_datetime<prev_datetime:
-                current_day+=1
-            prev_datetime=current_datetime
+            if current_datetime < prev_datetime:
+                current_day += 1
+            prev_datetime = current_datetime
 
-            if current_day==given_day:
-                rel_for_day+=1
+            if current_day == given_day:
+                rel_for_day += 1
                 day_data.add_tuple(self, current_row)
-            current_row+=1
-        print("Tuple presenti nel campione: {}".format(rel_for_day))
+            current_row += 1
+        print("Tuple presenti nel campione: {}\n_______________________________________________________________\n".format(rel_for_day))
         return day_data
 
 
