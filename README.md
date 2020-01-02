@@ -4,7 +4,7 @@ Lo scopo dell'applicazione è quello di costruire un feature vector per la predi
 Il feature vector va analizzato a parte. Questa applicazione si occupa solo della sua costruzione.
 Il feature vector si può considerare composto di due parti:
 - la prima, già implementata, viene recuperata in "./data_files/elaborated_data_files/".
-- la seconda, invece, contiene le features legate ai picchi.
+- la seconda, invece, contiene le feature legate ai picchi.
 
 L'intera applicazione si concentra sull'implementazione della seconda parte.
 
