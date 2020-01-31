@@ -1,7 +1,7 @@
 # Spike detection per il riconoscimento dei pasti in base a sensori di qualità dell’aria
 
 Lo scopo dell'applicazione è quello di costruire un feature vector per la predizione dei pasti in base a valori registrati da sensori di qualità dell'aria.
-Il feature vector va analizzato a parte. Questa applicazione si occupa solo della sua costruzione.
+Le feature prodotte verranno automaticamente unite a feature statistiche già presenti in alcuni files. Per la classificazione utilizzare il Knowledge Flow Enviroment di Weka impostato nel file allegato.
 Il feature vector si può considerare composto di due parti:
 - la prima, già implementata, viene recuperata in "./data_files/elaborated_data_files/".
 - la seconda, invece, contiene le feature legate ai picchi.
