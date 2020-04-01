@@ -38,7 +38,7 @@ In entrambi i casi ci si riferisce ai dataset con numeri che vanno da 1 a 8. L'o
 
 ## Dipendenze
 
-Per il corretto funzionamento, è necessario configurare come interprete Python 3.7. In seguito andranno installati i sequenti package
+Per il corretto funzionamento, è necessario Python 3. Installare le seguenti liberie:
 - cycler 0.10.0
 - kiwisolver 1.1.0
 - matplotlip 3.1.1
