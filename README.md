@@ -39,17 +39,16 @@ In entrambi i casi ci si riferisce ai dataset con numeri che vanno da 1 a 8. L'o
 ## Dipendenze
 
 Per il corretto funzionamento, è necessario Python 3. Installare le seguenti liberie:
-- cycler 0.10.0
-- kiwisolver 1.1.0
-- matplotlip 3.1.1
-- numpy 1.16.4
-- pandas 0.25.0
-- pip 19.0.3
-- pyparsing 2.4.0
-- python-dateutil 2.8.0
-- pytz 2019.1
-- scipy 1.3.0
-- six 1.12.0
+- cycler
+- kiwisolver 
+- matplotlip
+- numpy
+- pandas
+- pyparsing 
+- python-dateutil 
+- pytz 
+- scipy 
+- six
 
 ## Struttura del codice
 
