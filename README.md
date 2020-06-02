@@ -24,7 +24,7 @@ Feature esistenti:
 ```
 
 In entrambi i casi ci si riferisce ai dataset con numeri che vanno da 1 a 8. L'ordine dei dataset è dato dall'ordine alfabetico dei loro nomi orginali:
-
+```
 - uHooB.csv     --> 1.csv
 - uHooD.csv     --> 2.csv
 - uHooDM.csv    --> 3.csv
@@ -33,6 +33,7 @@ In entrambi i casi ci si riferisce ai dataset con numeri che vanno da 1 a 8. L'o
 - uHooMo.csv    --> 6.csv
 - uHooSil.csv   --> 7.csv
 - uHooSim.csv   --> 8.csv
+```
 
 è consigliabile non spostare ne rinominare i file.
 
